@@ -1,0 +1,2 @@
+*.yaml.tpl linguist-language=yaml
+*.yml.tpl linguist-language=yaml
