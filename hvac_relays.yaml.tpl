@@ -80,18 +80,21 @@ switch:
       - switch.turn_off: climate_mode_relay_2
       - switch.turn_off: climate_mode_relay_4
     lambda: |-
-      return id(climate_mode_relay_1).state && id(climate_mode_relay_1).state && id(climate_mode_relay_4).state;
+      return id(climate_mode_relay_1).state && id(climate_mode_relay_2).state && id(climate_mode_relay_4).state;
   - platform: output
     id: climate_mode_relay_1
-    #internal: true
+    disabled_by_default: true
+    name: "Internal climate mode relay 1"
     output: relay_1
   - platform: output
     id: climate_mode_relay_2
-    #internal: true
+    disabled_by_default: true
+    name: "Internal climate mode relay 2"
     output: relay_2
   - platform: output
     id: climate_mode_relay_4
-    #internal: true
+    disabled_by_default: true
+    name: "Internal climate mode relay 4"
     output: relay_4
   - platform: output
     name: "Fan mode" # on = on, off = auto
