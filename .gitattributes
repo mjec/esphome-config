@@ -1,2 +1,6 @@
 *.yaml.tpl linguist-language=yaml
 *.yml.tpl linguist-language=yaml
+*.kicad_pro linguist-language=lisp
+*.kicad_sch linguist-language=lisp
+*.kicad_sym linguist-language=lisp
+sym-lib-table linguist-language=lisp

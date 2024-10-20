@@ -1,39 +1,3 @@
-# This is the esphome configuration for our custom HVAC controller.
-# It is configured as follows:
-#
-#   Relay 1   on = cooling, off = heating   common = 12, normally_open = 14, normally_connected = 11
-#   Relay 2   on = cooling, off = heating   common = 18, normally_open = 19, normally_connected = 17
-#   Relay 3   on = fan on, off = fan auto   common = 15, normally_open = 16, normally_connected = relay_4_no
-#   Relay 4   on = cooling, off = heating   common = 14, normally_open = relay_3_nc, normally_connected = (not connected)
-#   Relay 5   on = zome 1 call, off = off   common = 18, normally_open = T5 (zone 1), normally_connected = (not connected)
-#   Relay 6   on = zome 2 call, off = off   common = 18, normally_open = T5 (zone 2), normally_connected = (not connected)
-#   Relay 7   (not connected)
-#   Relay 8   (not connected)
-#
-# Observed system states are:
-#
-#   Cooling
-#     - 12 connected to 14
-#     - 18 connected to 19
-
-#   Heating
-#     - 12 connected to 11
-#     - 18 connected to 17
-
-#   Fan only mode
-#     - 18 connected to 19      !!! TODO: check configuration here; I think this means R2 on + R1 off? Maybe?
-
-#   Fan mode on
-#     - 15 connected to 16
-
-#   Fan mode auto
-#     - 14 connected to 15, but only if cooling
-
-#   Calling for service
-#     - T5 connects to T6 for cooling; note T6 is always tied to 19
-#     - T5 connects to T4 for heating; note T4 is always tied to 17
-#     - Zone is determined by which T5 is connected
-
 esphome:
   name: hvac-relays
   # This is actually an ESP8266EX with 4mb RAM running at 26 MHz
@@ -68,74 +32,129 @@ wifi:
 
 captive_portal:
 
-switch:
-  - platform: template
-    name: "Climate mode"
-    turn_on_action: # on = cooling
-      - switch.turn_on: climate_mode_relay_1
-      - switch.turn_on: climate_mode_relay_2
-      - switch.turn_on: climate_mode_relay_4
-    turn_off_action: # off = heating
-      - switch.turn_off: climate_mode_relay_1
-      - switch.turn_off: climate_mode_relay_2
-      - switch.turn_off: climate_mode_relay_4
-    lambda: |-
-      return id(climate_mode_relay_1).state && id(climate_mode_relay_2).state && id(climate_mode_relay_4).state;
-  - platform: output
-    id: climate_mode_relay_1
-    disabled_by_default: true
-    name: "Internal climate mode relay 1"
-    output: relay_1
-  - platform: output
-    id: climate_mode_relay_2
-    disabled_by_default: true
-    name: "Internal climate mode relay 2"
-    output: relay_2
-  - platform: output
-    id: climate_mode_relay_4
-    disabled_by_default: true
-    name: "Internal climate mode relay 4"
-    output: relay_4
-  - platform: output
-    name: "Fan mode" # on = on, off = auto
-    output: relay_3
-  - platform: output
-    name: "Zone 1 call"
-    output: relay_5
-  - platform: output
-    name: "Zone 2 call"
-    output: relay_6
-  - platform: output
-    name: "Relay 7 (not connected)"
-    output: relay_7
-    disabled_by_default: true
-  - platform: output
-    name: "Relay 8 (not connected)"
-    output: relay_8
-    disabled_by_default: true
+climate:
+  - &thermostat-zone
+    name: "Zone 1"
+    sensor: temperature_zone_1
+    idle_action:
+      - output.turn_off: K5
+    heat_action:
+      - output.turn_on: K5
+    cool_action:
+      - output.turn_on: K5
+    
+    # Common definitions below this point
+    platform: thermostat
+    min_cooling_off_time: 300s
+    min_cooling_run_time: 300s
+    min_heating_off_time: 300s
+    min_heating_run_time: 300s
+    min_fanning_off_time: 30s
+    min_fanning_run_time: 30s
+    min_fan_mode_switching_time: 30s
+    min_idle_time: 30s
+    fan_only_cooling: false
+
+    cool_mode:
+      - output.turn_on: K1
+      - output.turn_on: K2
+      - output.turn_on: K4
+      - output.turn_on: K7
+      - output.turn_on: K8
+    heat_mode:
+      - output.turn_off: K1
+      - output.turn_off: K2
+      - output.turn_off: K4
+      - output.turn_on: K7
+      - output.turn_on: K8
+    fan_only_mode:
+      - output.turn_off: K1
+      - output.turn_on: K2
+      - output.turn_off: K4
+      - output.turn_off: K7
+      - output.turn_on: K8    
+    off_mode:
+      - output.turn_off: K3
+      - output.turn_off: K4
+      - output.turn_off: K7
+      - output.turn_off: K8
+
+    fan_mode_auto_action:
+      - output.turn_off: K3
+    fan_mode_on_action:
+      - output.turn_on: K3
+
+    fan_only_action:
+      - output.turn_on: K3
+
+    cool_deadband: 1 °F
+    cool_overrun: 1 °F
+    heat_deadband: 1 °F
+    heat_overrun: 1 °F
+
+    default_preset: home
+    preset:
+      - name: home
+        default_target_temperature_low: 64 °F
+        default_target_temperature_high: 69 °F
+        fan_mode: auto
+      - name: sleep
+        default_target_temperature_low: 60 °F
+        default_target_temperature_high: 65 °F
+        fan_mode: auto
+      - name: eco
+        default_target_temperature_low: 60 °F
+        default_target_temperature_high: 70 °F
+        fan_mode: auto
+      - name: away
+        default_target_temperature_low: 58 °F
+        default_target_temperature_high: 72 °F
+        fan_mode: auto
+
+  - <<: *thermostat-zone
+    name: "Zone 2"
+    sensor: temperature_zone_2
+    idle_action:
+      - output.turn_off: K6
+    heat_action:
+      - output.turn_on: K6
+    cool_action:
+      - output.turn_on: K6
+
+sensor:
+  - platform: homeassistant
+    name: Zone 1 Temperature
+    id: temperature_zone_1
+    unit_of_measurement: "°F"
+    entity_id: sensor.sbht_003c_7e6c_temperature
+  - platform: homeassistant
+    name: Zone 2 Temperature
+    id: temperature_zone_2
+    unit_of_measurement: "°F"
+    entity_id: sensor.sbht_003c_ee92_temperature
 
 output:
   - platform: gpio
     pin: GPIO12
-    id: relay_1
+    id: K1
   - platform: gpio
     pin: GPIO14
-    id: relay_2
+    id: K2
   - platform: gpio
     pin: GPIO16
-    id: relay_3
+    id: K3
   - platform: gpio
     pin: GPIO05
-    id: relay_4
+    id: K4
   - platform: gpio
     pin: GPIO04
-    id: relay_5
+    id: K5
   - platform: gpio
     pin: GPIO00
-    id: relay_6
+    id: K6
   - platform: gpio
     pin: GPIO02
-    id: relay_7
+    id: K7
   - platform: gpio
     pin: GPIO15
-    id: relay_8
+    id: K8

@@ -1,2 +1,8 @@
 .esphome
 *.yaml
+hvac_relays/**
+!hvac_relays/*.pdf
+!hvac_relays/*.kicad_pro
+!hvac_relays/*.kicad_sch
+!hvac_relays/*.kicad_sym
+!hvac_relays/sym-lib-table
