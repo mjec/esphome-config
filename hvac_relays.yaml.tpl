@@ -126,11 +126,19 @@ sensor:
     name: Zone 1 Temperature
     id: temperature_zone_1
     unit_of_measurement: "°F"
+    # These sensors provde a °F value, but esphome interprets it as °C.
+    # So convert C -> F and we'll get actual °F.
+    filters:
+      - lambda: return (x - 32.0) * (5.0/9.0);
     entity_id: sensor.sbht_003c_7e6c_temperature
   - platform: homeassistant
     name: Zone 2 Temperature
     id: temperature_zone_2
     unit_of_measurement: "°F"
+    # These sensors provde a °F value, but esphome interprets it as °C.
+    # So convert C -> F and we'll get actual °F.
+    filters:
+      - lambda: return (x - 32.0) * (5.0/9.0);
     entity_id: sensor.sbht_003c_ee92_temperature
 
 output:
