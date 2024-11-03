@@ -42,7 +42,7 @@ climate:
       - output.turn_on: K5
     cool_action:
       - output.turn_on: K5
-    
+
     # Common definitions below this point
     platform: thermostat
     min_cooling_off_time: 300s
@@ -72,7 +72,7 @@ climate:
       - output.turn_on: K2
       - output.turn_off: K4
       - output.turn_off: K7
-      - output.turn_on: K8    
+      - output.turn_on: K8
     off_mode:
       - output.turn_off: K3
       - output.turn_off: K4
