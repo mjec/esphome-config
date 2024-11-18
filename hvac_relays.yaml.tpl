@@ -55,6 +55,11 @@ climate:
     min_idle_time: 30s
     fan_only_cooling: false
 
+    visual:
+      temperature_step:
+        target_temperature: 0.5
+        current_temperature: 0.1
+
     cool_mode:
       - output.turn_on: K1
       - output.turn_on: K2
