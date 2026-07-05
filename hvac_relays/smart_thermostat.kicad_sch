@@ -1,0 +1,2303 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "0d75270d-ca69-46b9-aa79-f6d59cd0d830")
+	(paper "USLetter")
+	(title_block
+		(title "Smart thermostat")
+		(date "2024-10-19")
+		(rev "B")
+		(company "Emjek Cordover")
+		(comment 1 "github.com/mjec/esphome-config")
+		(comment 3 "Original relay control system (git commit e240f07dc18ef41a6ce876fcd1fed9019c18663d)")
+		(comment 4 "For EWC-OR-3 control panel")
+	)
+	(lib_symbols
+		(symbol "Switch:SW_Push_DPDT"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_Push_DPDT"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Momentary Switch, dual pole double throw"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch dual-pole double-throw spdt ON-ON"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_DPDT_0_0"
+				(circle
+					(center -2.032 -5.08)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.032 5.08)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -7.62)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_Push_DPDT_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -4.826) (xy 2.3368 -3.0988)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 5.334) (xy 2.3368 7.0612)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.016) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.556) (xy 0 4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 7.874) (xy 0 6.096)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 7.62)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_Push_DPDT_1_1"
+				(rectangle
+					(start -3.175 8.89)
+					(end 3.175 -8.89)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 5.08 7.62 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -7.62 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "hvac-relays-symbols:Relay"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 3.81 -11.43 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Relay"
+				(at 1.27 -11.43 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
+				(at 11.43 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Single Pole Relay SPDT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Relay*SPDT*SANYOU*SRD*Series*Form*C*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Relay_0_0"
+				(polyline
+					(pts
+						(xy 6.35 -6.35) (xy 3.81 -6.35) (xy 4.445 -5.715) (xy 5.08 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Relay_0_1"
+				(polyline
+					(pts
+						(xy -3.81 6.35) (xy -0.635 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -3.81) (xy -3.81 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -3.81) (xy 5.08 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 8.89) (xy 3.175 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.905) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -0.635) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0.635) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.905) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.175) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 6.35) (xy 3.175 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.175 9.525)
+					(end -0.635 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 6.35 11.43)
+					(end -3.81 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Relay_1_1"
+				(polyline
+					(pts
+						(xy 5.08 -1.27) (xy 4.445 -1.905) (xy 3.81 -1.27) (xy 6.35 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin power_in line
+					(at -6.35 -3.81 0)
+					(length 2.54)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 6.35 0)
+					(length 2.54) hide
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 8.89 -6.35 180)
+					(length 2.54)
+					(name "NO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 8.89 -1.27 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.89 6.35 180)
+					(length 2.54) hide
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 193.04 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4fc38056-9ba0-4ffa-a99a-0b4601cdc0a4")
+	)
+	(junction
+		(at 171.45 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a69a4c3-0129-472d-a0e2-7ae7e953f083")
+	)
+	(junction
+		(at 115.57 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f67b23d9-6a1b-4da5-978a-225b297080c3")
+	)
+	(no_connect
+		(at 205.74 99.06)
+		(uuid "09cfbef6-f272-4422-857d-0632c5f4bd73")
+	)
+	(no_connect
+		(at 87.63 153.67)
+		(uuid "27313aeb-b3f5-45b8-aae0-348f3e13141d")
+	)
+	(no_connect
+		(at 120.65 153.67)
+		(uuid "8ef80391-b10d-4031-85a5-33a4f4c64d8a")
+	)
+	(no_connect
+		(at 123.19 57.15)
+		(uuid "c0e96562-e31a-4b40-8318-1a58e242d991")
+	)
+	(no_connect
+		(at 187.96 129.54)
+		(uuid "ebff9ad2-986d-4fcc-933a-4d4d59d61611")
+	)
+	(no_connect
+		(at 177.8 129.54)
+		(uuid "fb66dc16-ce58-4598-9304-b0dec9eef10a")
+	)
+	(no_connect
+		(at 173.99 99.06)
+		(uuid "febacff7-b0e3-4e00-ad00-7f9153fb53b0")
+	)
+	(wire
+		(pts
+			(xy 198.12 165.1) (xy 193.04 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0358ffcb-d4b4-4fa0-ae7f-f138040a63d2")
+	)
+	(wire
+		(pts
+			(xy 118.11 128.27) (xy 118.11 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "037683d1-28cd-43e6-9881-7d87ea6a6520")
+	)
+	(wire
+		(pts
+			(xy 102.87 102.87) (xy 102.87 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05e6eb44-c849-41d5-8469-a1be75398697")
+	)
+	(wire
+		(pts
+			(xy 82.55 165.1) (xy 115.57 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "112b21df-c377-4a4d-9d4c-e33279857b9a")
+	)
+	(wire
+		(pts
+			(xy 125.73 102.87) (xy 125.73 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e411554-b3ac-42cc-9a70-fadfe7accda5")
+	)
+	(wire
+		(pts
+			(xy 171.45 26.67) (xy 171.45 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29a8f7a1-e968-4d7d-ba3a-46bc2e1a2323")
+	)
+	(polyline
+		(pts
+			(xy 13.97 111.76) (xy 66.04 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34842fa9-df41-4e57-a245-7816b0caf8ba")
+	)
+	(wire
+		(pts
+			(xy 190.5 118.11) (xy 203.2 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "363b5f5f-99f3-492c-bd71-8aaf521c9eb2")
+	)
+	(wire
+		(pts
+			(xy 193.04 129.54) (xy 193.04 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36c21ccd-0235-47f1-86ff-988749f60c90")
+	)
+	(wire
+		(pts
+			(xy 200.66 99.06) (xy 200.66 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fc1163b-09ce-4690-b6cd-f05266b8f11a")
+	)
+	(wire
+		(pts
+			(xy 82.55 153.67) (xy 82.55 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44e23d3d-d12e-44da-a7b3-da123eee2a99")
+	)
+	(polyline
+		(pts
+			(xy 69.596 180.086) (xy 121.666 180.086)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "452456de-ad21-4551-a321-35700efed66e")
+	)
+	(wire
+		(pts
+			(xy 203.2 118.11) (xy 203.2 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "497b8033-264f-4660-a11d-54e56553df78")
+	)
+	(wire
+		(pts
+			(xy 121.92 86.36) (xy 125.73 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f37d02c-f33c-4098-a55f-5442f4adf289")
+	)
+	(wire
+		(pts
+			(xy 102.87 33.02) (xy 171.45 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "507fc067-4055-4031-91aa-e4e6433cda1a")
+	)
+	(wire
+		(pts
+			(xy 190.5 119.38) (xy 190.5 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5096a8d2-6d26-40a6-b9fa-c1dad7656b86")
+	)
+	(wire
+		(pts
+			(xy 125.73 86.36) (xy 125.73 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cd8b43a-800d-4531-bd13-9a64c26578ae")
+	)
+	(wire
+		(pts
+			(xy 198.12 54.61) (xy 198.12 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e42e97c-9433-406d-8e21-6d7708030807")
+	)
+	(wire
+		(pts
+			(xy 166.37 54.61) (xy 166.37 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "601b0e35-4b9b-42d8-9c8d-935551cf5617")
+	)
+	(wire
+		(pts
+			(xy 102.87 88.9) (xy 106.68 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62c42c4f-822c-4811-8464-fadeb3edde22")
+	)
+	(wire
+		(pts
+			(xy 115.57 165.1) (xy 193.04 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71c6e540-b3b4-4d57-8e67-0406bf222ce4")
+	)
+	(polyline
+		(pts
+			(xy 13.97 73.66) (xy 66.04 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75eca37d-e4e4-4b74-a5ed-0978b9a4e36b")
+	)
+	(wire
+		(pts
+			(xy 168.91 99.06) (xy 168.91 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "786f3055-0a38-4c5d-8bc5-54cab6c6b264")
+	)
+	(polyline
+		(pts
+			(xy 13.97 152.4) (xy 66.04 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fb910c3-c64c-4b0b-9c2c-d18f545e4be8")
+	)
+	(wire
+		(pts
+			(xy 125.73 91.44) (xy 121.92 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82bd3cfa-ff8c-48c8-af97-60f5bb7c6b70")
+	)
+	(wire
+		(pts
+			(xy 102.87 59.69) (xy 107.95 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fef4dcb-df89-4ced-acce-c3d04da48d4f")
+	)
+	(wire
+		(pts
+			(xy 182.88 129.54) (xy 182.88 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93653d42-d5f2-4663-85ae-a8dd09f5465e")
+	)
+	(wire
+		(pts
+			(xy 171.45 33.02) (xy 171.45 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a2b833d-a2b9-49d9-8317-c812382a8b1a")
+	)
+	(polyline
+		(pts
+			(xy 13.97 17.78) (xy 66.04 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6ba0814-3ba3-425c-889a-3aaa16f1be8d")
+	)
+	(wire
+		(pts
+			(xy 85.09 128.27) (xy 85.09 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab4ae6c9-a8de-425a-b0cb-928e31e100e4")
+	)
+	(wire
+		(pts
+			(xy 102.87 33.02) (xy 102.87 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6693234-c319-480a-8fbd-2648b3530a34")
+	)
+	(polyline
+		(pts
+			(xy 13.97 171.45) (xy 66.04 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8bca805-7aa2-4d38-a83b-9e735a7ba32e")
+	)
+	(wire
+		(pts
+			(xy 115.57 153.67) (xy 115.57 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcf7a8d0-aaa9-43ea-993a-287c1348f36f")
+	)
+	(wire
+		(pts
+			(xy 125.73 62.23) (xy 123.19 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c14c7f22-9ed9-42ba-b25f-b3f863a7d3b0")
+	)
+	(wire
+		(pts
+			(xy 203.2 54.61) (xy 203.2 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c95274a6-7a4b-4d86-b805-e33bdb515302")
+	)
+	(wire
+		(pts
+			(xy 180.34 118.11) (xy 171.45 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf246f27-1ca0-4935-9805-0387e5019b9c")
+	)
+	(wire
+		(pts
+			(xy 180.34 119.38) (xy 180.34 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e18804fd-c8ac-45a4-b270-b0055a7e6546")
+	)
+	(polyline
+		(pts
+			(xy 13.97 90.17) (xy 66.04 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3f55c6d-e330-4586-9d8a-712e03f8374e")
+	)
+	(wire
+		(pts
+			(xy 171.45 118.11) (xy 171.45 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef0f0291-8889-4c1f-b45c-4fa56cdbc5ba")
+	)
+	(rectangle
+		(start 71.12 133.35)
+		(end 143.51 158.75)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 45c1a9f4-13d8-453c-9450-dfc12192dbc1)
+	)
+	(rectangle
+		(start 13.97 107.95)
+		(end 66.04 199.39)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 502bf1d8-c086-4819-8154-bcab7585eac8)
+	)
+	(rectangle
+		(start 13.97 13.97)
+		(end 66.04 105.41)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 778aa624-4416-493a-a1e8-9e7e587f2be3)
+	)
+	(rectangle
+		(start 148.59 66.04)
+		(end 219.71 88.9)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid b5e959ed-85af-459d-b8dc-b6a44e02999c)
+	)
+	(rectangle
+		(start 96.52 35.56)
+		(end 134.62 96.52)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid db07c796-c423-4ae3-af92-7fce3a723fc4)
+	)
+	(rectangle
+		(start 69.596 176.276)
+		(end 121.666 199.136)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e2456f56-bf1c-4bba-84d3-313ba211e01a)
+	)
+	(rectangle
+		(start 148.59 91.44)
+		(end 219.71 133.35)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e9b049d0-6f20-48ee-9e07-49a06812b047)
+	)
+	(text "heating\nheating\nfan auto\nheating\nzone 1 no call\nzone 2 no call\nsystem off\nsystem off"
+		(exclude_from_sim no)
+		(at 92.71 190.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "221c1fa4-9bf9-4506-b8b6-fdc67dc56d02")
+	)
+	(text "on"
+		(exclude_from_sim no)
+		(at 77.47 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "32ea8cd8-7d78-433a-9a53-04a0ebcc1bbc")
+	)
+	(text "EWC-OR-3 Behavior"
+		(exclude_from_sim no)
+		(at 25.146 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "415317a2-bf1d-4a16-a03c-ec3e163aaa5b")
+	)
+	(text "cooling\ncooling\nfan on\ncooling\nzone 1 call\nzone 2 call\nsystem on\nsystem on"
+		(exclude_from_sim no)
+		(at 77.47 190.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "57704221-82d4-4663-99f7-3f521a3f09ac")
+	)
+	(text "off"
+		(exclude_from_sim no)
+		(at 92.71 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "57f856e8-9295-451b-8f89-d3c83d7157b5")
+	)
+	(text "Relay states"
+		(exclude_from_sim no)
+		(at 76.454 178.562 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "6f52e8b0-0484-4818-9234-280c111f5a34")
+	)
+	(text "System mode*:\n\n  Off\n    - K7 off\n    - K8 off\n\n  Cooling\n    - K1 on\n    - K2 on\n    - K4 on\n    - K7 on\n    - K8 on\n\n  Heating\n    - K1 off\n    - K2 off\n    - K4 off\n    - K7 on\n    - K8 on\n\n  Fan only mode\n    - K1 off\n    - K2 on\n    - K4 off\n    - K7 off\n    - K8 on\n\nFan mode:\n\n  Auto (equivalent to off in fan-only mode)\n    - K3 off\n\n  On\n    - K3 on\n\nCalling for heat/cooling:\n  \n  Zone 1\n    - K5 on\n\n  Zone 2\n    - K6 on"
+		(exclude_from_sim no)
+		(at 15.24 19.558 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "78640da8-cc88-4579-9687-e9cae5bcfd4e")
+	)
+	(text "Call for heat/cooling"
+		(exclude_from_sim no)
+		(at 132.334 135.636 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "80e35ac8-3f42-4409-9b8a-044f98f70d25")
+	)
+	(text "System mode:\n\n  Off\n    - HVAC-12 not connected\n    - HVAC-18 not connected\n\n  Cooling\n    - HVAC-12 connected to HVAC-14\n    - HVAC-18 connected to HVAC-19\n    - HVAC-15 connected to HVAC-14 if fan auto\n\n  Heating\n    - HVAC-12 connected to HVAC-11\n    - HVAC-18 connected to HVAC-17\n    - HVAC-15 not connected if fan auto\n\n  Fan only mode\n    - HVAC-12 not connected\n    - HVAC-18 connected to HVAC-19\n\nFan mode:\n\n  Auto\n    - HVAC-15 conneted HVAC-14 if cooling\n    - HVAC-15 not connected otherwise\n\n  On\n    - HVAC-15 connected to HVAC-16\n\nCalling for heat/cooling:\n  \n  Zone 1\n    - T5-Z1 connected to T6-Z1 if cooling\n    - T5-Z1 connected to T4-Z1 if heating\n    - T6-Z1 is always connected to HVAC-19\n    - T4-Z1 is always connected to HVAC-17\n\n  Zone 2\n    - T5-Z2 connected to T6-Z2 if cooling\n    - T5-Z2 connected to T4-Z2 if heating\n    - T6-Z2 is always connected to HVAC-19\n    - T4-Z2 is always connected to HVAC-17\n"
+		(exclude_from_sim no)
+		(at 15.24 113.538 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "95189af8-3700-4ac8-9300-586f460173b0")
+	)
+	(text "Configuration"
+		(exclude_from_sim no)
+		(at 21.59 16.256 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "be7cf1f4-6e8d-4705-a774-8a284fe0b7f4")
+	)
+	(text "K1\nK2\nK3\nK4\nK5\nK6\nK7\nK8"
+		(exclude_from_sim no)
+		(at 71.882 190.754 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.2381)
+			)
+		)
+		(uuid "ca92bfc9-c455-437c-961e-f62f9037cf8a")
+	)
+	(text "Fan control"
+		(exclude_from_sim no)
+		(at 128.27 37.846 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "e68635f1-718e-4f58-8bd4-b0202d4da60c")
+	)
+	(text "Mode control"
+		(exclude_from_sim no)
+		(at 212.344 68.326 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "ea06ccbf-10cd-405d-9870-3fc1677cc7f3")
+	)
+	(text "* SW1 off forces system\n  mode to off.\n  SW1 should normally\n  be on."
+		(exclude_from_sim no)
+		(at 41.402 68.834 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left)
+		)
+		(uuid "fc3a6cb0-b202-4dc4-b1e5-9ca8660bfb6f")
+	)
+	(text "On/off control"
+		(exclude_from_sim no)
+		(at 211.836 93.472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "fe7e28a0-12cf-401a-b414-373cfe2ce4a0")
+	)
+	(global_label "T5-Z2"
+		(shape passive)
+		(at 118.11 128.27 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "18ade6a4-a8c5-4040-9eca-b1ca258c3931")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.11 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HVAC-12"
+		(shape passive)
+		(at 182.88 140.97 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1d89df25-039d-4cc7-861a-6a700e3af4d4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.88 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HVAC-19"
+		(shape passive)
+		(at 203.2 54.61 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3a26a006-c58d-4ae9-8afd-5859e3ba002d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.2 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "T5-Z1"
+		(shape passive)
+		(at 85.09 128.27 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "51fa2248-d8d8-4a85-9a3b-3fbe64448198")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HVAC-17"
+		(shape passive)
+		(at 198.12 54.61 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6367ac72-f6a0-4f68-b28e-fad0038cc985")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.12 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HVAC-16"
+		(shape passive)
+		(at 125.73 102.87 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8cbc6272-b0e9-447a-9df6-38ed34b352c3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 125.73 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HVAC-15"
+		(shape passive)
+		(at 102.87 102.87 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cc1c2ce1-1faa-4097-b716-08b3faa4efe3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.87 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HVAC-14"
+		(shape passive)
+		(at 171.45 26.67 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f3c917e0-d2d6-487c-a0b5-706ea22db875")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 171.45 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HVAC-18"
+		(shape passive)
+		(at 198.12 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f662be3f-85ed-4a6e-beab-18770f6da30d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.12 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HVAC-11"
+		(shape passive)
+		(at 166.37 54.61 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f758389a-0592-4e6d-af1a-7839666a6d40")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.37 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hvac-relays-symbols:Relay")
+		(at 114.3 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0cad4187-d8c9-4374-af58-5af7f4afd6df")
+		(property "Reference" "K4"
+			(at 115.57 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Relay"
+			(at 115.57 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
+			(at 125.73 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
+			(at 111.76 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
+			(at 111.76 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b6ef0615-19ab-40a9-896c-aaa9def91e3b")
+		)
+		(pin "4"
+			(uuid "5b7c3649-c160-4b50-ad88-877b1d361c8b")
+		)
+		(pin "2"
+			(uuid "086a7eee-81f5-47df-8077-c5824ac2b249")
+		)
+		(pin "3"
+			(uuid "2322eb72-feaa-40b7-b5b3-27a1b92236c3")
+		)
+		(pin "5"
+			(uuid "46d357fa-818f-4f29-be18-3bb28f01735a")
+		)
+		(instances
+			(project "hvac_relays"
+				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/f5e2d47a-6bdb-4a2f-aa04-b488d94360ae"
+					(reference "K4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hvac-relays-symbols:Relay")
+		(at 113.03 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2368e313-bbab-474f-8a42-4d2b59d50e18")
+		(property "Reference" "K3"
+			(at 114.3 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Relay"
+			(at 114.3 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
+			(at 124.46 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
+			(at 110.49 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
+			(at 110.49 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f847e3d7-a180-43ea-bd94-63854e9964ea")
+		)
+		(pin "4"
+			(uuid "60dbccb1-1637-4cb0-8cb6-cec8f586f98f")
+		)
+		(pin "2"
+			(uuid "5dcb3f47-6b09-4ceb-85d1-7a8520f889e6")
+		)
+		(pin "3"
+			(uuid "d6fdbc13-895a-4139-bfae-4dabd23c1d08")
+		)
+		(pin "5"
+			(uuid "451cb4ec-9cc8-4441-ac8e-b02013c26a7e")
+		)
+		(instances
+			(project "hvac_relays"
+				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/f5e2d47a-6bdb-4a2f-aa04-b488d94360ae"
+					(reference "K3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_DPDT")
+		(at 185.42 124.46 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "269c6306-1478-44c0-b9ee-fe0ab8291467")
+		(property "Reference" "SW1"
+			(at 195.58 123.1899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Main disconnect"
+			(at 195.58 125.7299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Momentary Switch, dual pole double throw"
+			(at 185.42 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37a630a7-7c18-4e3e-bc02-41b9de596ad9")
+		)
+		(pin "2"
+			(uuid "05ad2286-25d5-40be-a798-862c36c1bc28")
+		)
+		(pin "4"
+			(uuid "2fbf9dbf-f8a2-4a5a-91ec-bb30c567b99a")
+		)
+		(pin "6"
+			(uuid "9d9f79de-8534-4445-bab4-1dd93920d690")
+		)
+		(pin "3"
+			(uuid "cee5e8e8-7604-478f-b08f-14136bf9e174")
+		)
+		(pin "5"
+			(uuid "6624dda1-b8c8-4b69-abfe-045464db83c1")
+		)
+		(instances
+			(project "hvac_relays"
+				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/f5e2d47a-6bdb-4a2f-aa04-b488d94360ae"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hvac-relays-symbols:Relay")
+		(at 165.1 78.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b603481-ff38-46b6-aae6-9b977362262c")
+		(property "Reference" "K1"
+			(at 175.26 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Relay"
+			(at 175.26 78.7399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
+			(at 166.37 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
+			(at 165.1 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
+			(at 165.1 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b7e9102-6299-4e20-a390-c103734adef2")
+		)
+		(pin "4"
+			(uuid "058f1ab8-0a5e-45e9-8a8b-3764fec16d3f")
+		)
+		(pin "2"
+			(uuid "d9309993-9e64-4b95-8286-c9b8de75059d")
+		)
+		(pin "3"
+			(uuid "4ae51b47-f322-4cc9-8d7c-76ac8da62d50")
+		)
+		(pin "5"
+			(uuid "ac830b81-b038-4043-b704-2c93b9f61e84")
+		)
+		(instances
+			(project "hvac_relays"
+				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/f5e2d47a-6bdb-4a2f-aa04-b488d94360ae"
+					(reference "K1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hvac-relays-symbols:Relay")
+		(at 167.64 107.95 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "434c99c5-bae4-4620-8843-3d58647f24f4")
+		(property "Reference" "K7"
+			(at 177.8 105.4099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Relay"
+			(at 177.8 107.9499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
+			(at 168.91 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
+			(at 167.64 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
+			(at 167.64 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa244df7-5634-41ee-9c1c-1c73902763ae")
+		)
+		(pin "4"
+			(uuid "68e60800-dd7d-4240-87fc-5cd79b5e8fbb")
+		)
+		(pin "2"
+			(uuid "79b4817c-a4c8-4fa5-b31e-5bf5e1498e35")
+		)
+		(pin "3"
+			(uuid "68e487c8-c702-4acb-8503-d57c1c0e192c")
+		)
+		(pin "5"
+			(uuid "3104ccd0-bcde-44e5-8071-c022c622e8b2")
+		)
+		(instances
+			(project "hvac_relays"
+				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/f5e2d47a-6bdb-4a2f-aa04-b488d94360ae"
+					(reference "K7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hvac-relays-symbols:Relay")
+		(at 121.92 144.78 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "506ef0e5-f9ed-48ad-9a19-7bcffea04527")
+		(property "Reference" "K6"
+			(at 134.62 144.7799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Relay"
+			(at 134.62 147.3199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
+			(at 120.65 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
+			(at 121.92 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
+			(at 121.92 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e30614a-b1fb-485d-8393-4f09df9347e7")
+		)
+		(pin "4"
+			(uuid "16545f96-855d-4e27-b626-5c2a14e0e586")
+		)
+		(pin "2"
+			(uuid "9f19e727-012c-4868-a684-07d172768661")
+		)
+		(pin "3"
+			(uuid "877b5f48-3895-4501-9a66-c932a93f4a9e")
+		)
+		(pin "5"
+			(uuid "4f77e31e-06d1-4f78-8839-5e98e859e07a")
+		)
+		(instances
+			(project "hvac_relays"
+				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/f5e2d47a-6bdb-4a2f-aa04-b488d94360ae"
+					(reference "K6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hvac-relays-symbols:Relay")
+		(at 88.9 144.78 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "548a61f7-d9d4-4cdb-9d9e-42adda5e64ac")
+		(property "Reference" "K5"
+			(at 101.6 144.7799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Relay"
+			(at 101.6 147.3199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
+			(at 87.63 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
+			(at 88.9 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
+			(at 88.9 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f93c958c-b6a5-451d-9133-021614d57109")
+		)
+		(pin "4"
+			(uuid "fda4f21b-45f6-4a0d-8ff2-53ea08eb4d27")
+		)
+		(pin "2"
+			(uuid "50d4d5d9-8e0c-47c2-b530-81e0feef1712")
+		)
+		(pin "3"
+			(uuid "6255265c-cf08-4ade-830b-5199a1484fa4")
+		)
+		(pin "5"
+			(uuid "ec3dd218-a466-4419-8eb0-ea16988e98fc")
+		)
+		(instances
+			(project "hvac_relays"
+				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/f5e2d47a-6bdb-4a2f-aa04-b488d94360ae"
+					(reference "K5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hvac-relays-symbols:Relay")
+		(at 196.85 78.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8cc6a515-8d29-4bef-b230-4fd874f7c88c")
+		(property "Reference" "K2"
+			(at 207.01 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Relay"
+			(at 207.01 78.7399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
+			(at 198.12 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
+			(at 196.85 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
+			(at 196.85 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16b43491-161b-4123-91a7-b8d8f31f6007")
+		)
+		(pin "4"
+			(uuid "1ef78ecf-c760-416f-b128-797fd1dfe32d")
+		)
+		(pin "2"
+			(uuid "a51e20f0-5ba8-459b-9586-327dcbcc6c4c")
+		)
+		(pin "3"
+			(uuid "0a111f7a-5c40-4973-9b76-8e9c4501c915")
+		)
+		(pin "5"
+			(uuid "83af7be9-211a-4f54-b0b5-7ec93ad521b7")
+		)
+		(instances
+			(project "hvac_relays"
+				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/f5e2d47a-6bdb-4a2f-aa04-b488d94360ae"
+					(reference "K2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hvac-relays-symbols:Relay")
+		(at 199.39 107.95 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db661531-b322-465e-9513-e0204243701f")
+		(property "Reference" "K8"
+			(at 209.55 105.4099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Relay"
+			(at 209.55 107.9499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
+			(at 200.66 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
+			(at 199.39 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
+			(at 199.39 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2ed84705-3122-4f6a-93a2-1d400475fcca")
+		)
+		(pin "4"
+			(uuid "2416c66e-fb53-40f8-8db9-097f86f670e6")
+		)
+		(pin "2"
+			(uuid "6b293548-aca7-490b-8f11-8a2249465dd4")
+		)
+		(pin "3"
+			(uuid "a66dbf7a-e9cc-43fd-ac22-51831c48b203")
+		)
+		(pin "5"
+			(uuid "b5eb0da4-1300-4cb9-82db-f271f7bcfc3c")
+		)
+		(instances
+			(project "hvac_relays"
+				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/f5e2d47a-6bdb-4a2f-aa04-b488d94360ae"
+					(reference "K8")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

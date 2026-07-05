@@ -386,6 +386,18 @@
     [
       "2260bd6d-eaa6-476e-b855-5343af1e970d",
       "Root"
+    ],
+    [
+      "8ce6a019-55b8-4ff8-ab85-2cfe623e2b70",
+      "Compound system"
+    ],
+    [
+      "e2bc083a-538f-46a7-a5f5-d0e76f886d30",
+      "Wall thermostat"
+    ],
+    [
+      "f5e2d47a-6bdb-4a2f-aa04-b488d94360ae",
+      "Smart thermostat"
     ]
   ],
   "text_variables": {}
