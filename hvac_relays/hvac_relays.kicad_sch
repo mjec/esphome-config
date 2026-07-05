@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "2260bd6d-eaa6-476e-b855-5343af1e970d")
 	(paper "USLetter")
 	(title_block
@@ -14,123 +14,10 @@
 		(comment 4 "For EWC-OR-3 control panel")
 	)
 	(lib_symbols)
-	(sheet
-		(at 21.59 24.13)
-		(size 26.67 5.08)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "8ce6a019-55b8-4ff8-ab85-2cfe623e2b70")
-		(property "Sheetname" "Compound system"
-			(at 21.59 23.4184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "compound_system.kicad_sch"
-			(at 21.59 29.7946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 119.38 45.72)
-		(size 26.67 5.08)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "e2bc083a-538f-46a7-a5f5-d0e76f886d30")
-		(property "Sheetname" "Wall thermostat"
-			(at 119.38 45.0084 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "wall_thermostat.kicad_sch"
-			(at 119.38 51.3846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 119.38 57.15)
-		(size 26.67 5.08)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "f5e2d47a-6bdb-4a2f-aa04-b488d94360ae")
-		(property "Sheetname" "Smart thermostat"
-			(at 119.38 56.4384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "smart_thermostat.kicad_sch"
-			(at 119.38 62.8146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d"
-					(page "4")
-				)
-			)
-		)
-	)
 	(sheet_instances
 		(path "/"
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

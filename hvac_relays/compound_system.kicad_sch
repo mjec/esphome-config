@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "bb3557a7-ec84-4548-ba03-cd8475281ac6")
 	(paper "USLetter")
 	(title_block
@@ -16,14 +16,22 @@
 	)
 	(lib_symbols
 		(symbol "Jumper:Jumper_2_Small_Bridged"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim yes)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "JP"
 				(at 0 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -32,6 +40,8 @@
 			)
 			(property "Value" "Jumper_2_Small_Bridged"
 				(at 0 -2.286 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -40,47 +50,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Jumper, 2-pole, small symbol, bridged"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "Jumper SPST"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Jumper_2_Small_Bridged_0_0"
@@ -109,9 +129,9 @@
 			)
 			(symbol "Jumper_2_Small_Bridged_0_1"
 				(arc
-					(start 0.762 0.254)
+					(start -0.762 0.254)
 					(mid 0 0.5696)
-					(end -0.762 0.254)
+					(end 0.762 0.254)
 					(stroke
 						(width 0)
 						(type default)
@@ -159,16 +179,25 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Passthru_1"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.002) hide)
+				(offset 0.002)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "T"
 				(at 0 -0.254 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -177,6 +206,8 @@
 			)
 			(property "Value" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -185,29 +216,35 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Passthru_1_0_1"
@@ -263,17 +300,24 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Relay_1"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "K"
 				(at 3.81 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -283,6 +327,8 @@
 			)
 			(property "Value" "Relay"
 				(at 1.27 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -292,48 +338,58 @@
 			)
 			(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 				(at 11.43 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "Single Pole Relay SPDT"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Relay*SPDT*SANYOU*SRD*Series*Form*C*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Relay_1_0_0"
@@ -401,31 +457,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.905) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.635) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.635) (xy 1.27 0)
+						(xy 1.27 3.175) (xy 1.27 2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -449,7 +481,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 3.175) (xy 1.27 2.54)
+						(xy 1.27 0.635) (xy 1.27 0)
 					)
 					(stroke
 						(width 0.254)
@@ -461,10 +493,22 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 6.35) (xy 3.175 6.35)
+						(xy 1.27 -0.635) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.905) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -491,6 +535,18 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 6.35) (xy 3.175 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -527,8 +583,9 @@
 				)
 				(pin passive line
 					(at -6.35 6.35 0)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -581,8 +638,9 @@
 				)
 				(pin passive line
 					(at 8.89 6.35 180)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -598,17 +656,24 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Relay_2"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "K"
 				(at 3.81 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -618,6 +683,8 @@
 			)
 			(property "Value" "Relay"
 				(at 1.27 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -627,48 +694,58 @@
 			)
 			(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 				(at 11.43 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "Single Pole Relay SPDT"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Relay*SPDT*SANYOU*SRD*Series*Form*C*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Relay_2_0_0"
@@ -736,31 +813,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.905) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.635) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.635) (xy 1.27 0)
+						(xy 1.27 3.175) (xy 1.27 2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -784,7 +837,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 3.175) (xy 1.27 2.54)
+						(xy 1.27 0.635) (xy 1.27 0)
 					)
 					(stroke
 						(width 0.254)
@@ -796,10 +849,22 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 6.35) (xy 3.175 6.35)
+						(xy 1.27 -0.635) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.905) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -826,6 +891,18 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 6.35) (xy 3.175 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -862,8 +939,9 @@
 				)
 				(pin passive line
 					(at -6.35 6.35 0)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -916,8 +994,9 @@
 				)
 				(pin passive line
 					(at 8.89 6.35 180)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -933,17 +1012,24 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Relay_3"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "K"
 				(at 3.81 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -953,6 +1039,8 @@
 			)
 			(property "Value" "Relay"
 				(at 1.27 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -962,48 +1050,58 @@
 			)
 			(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 				(at 11.43 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "Single Pole Relay SPDT"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Relay*SPDT*SANYOU*SRD*Series*Form*C*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Relay_3_0_0"
@@ -1071,31 +1169,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.905) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.635) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.635) (xy 1.27 0)
+						(xy 1.27 3.175) (xy 1.27 2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -1119,7 +1193,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 3.175) (xy 1.27 2.54)
+						(xy 1.27 0.635) (xy 1.27 0)
 					)
 					(stroke
 						(width 0.254)
@@ -1131,10 +1205,22 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 6.35) (xy 3.175 6.35)
+						(xy 1.27 -0.635) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.905) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1161,6 +1247,18 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 6.35) (xy 3.175 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -1197,8 +1295,9 @@
 				)
 				(pin passive line
 					(at -6.35 6.35 0)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1251,8 +1350,9 @@
 				)
 				(pin passive line
 					(at 8.89 6.35 180)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1268,17 +1368,24 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Relay_4"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "K"
 				(at 3.81 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1288,6 +1395,8 @@
 			)
 			(property "Value" "Relay"
 				(at 1.27 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1297,48 +1406,58 @@
 			)
 			(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 				(at 11.43 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "Single Pole Relay SPDT"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Relay*SPDT*SANYOU*SRD*Series*Form*C*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Relay_4_0_0"
@@ -1406,31 +1525,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.905) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.635) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.635) (xy 1.27 0)
+						(xy 1.27 3.175) (xy 1.27 2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -1454,7 +1549,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 3.175) (xy 1.27 2.54)
+						(xy 1.27 0.635) (xy 1.27 0)
 					)
 					(stroke
 						(width 0.254)
@@ -1466,10 +1561,22 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 6.35) (xy 3.175 6.35)
+						(xy 1.27 -0.635) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.905) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1496,6 +1603,18 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 6.35) (xy 3.175 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -1532,8 +1651,9 @@
 				)
 				(pin passive line
 					(at -6.35 6.35 0)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1586,8 +1706,9 @@
 				)
 				(pin passive line
 					(at 8.89 6.35 180)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1603,17 +1724,24 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Relay_5"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "K"
 				(at 3.81 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1623,6 +1751,8 @@
 			)
 			(property "Value" "Relay"
 				(at 1.27 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1632,48 +1762,58 @@
 			)
 			(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 				(at 11.43 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "Single Pole Relay SPDT"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Relay*SPDT*SANYOU*SRD*Series*Form*C*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Relay_5_0_0"
@@ -1741,31 +1881,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.905) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.635) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.635) (xy 1.27 0)
+						(xy 1.27 3.175) (xy 1.27 2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -1789,7 +1905,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 3.175) (xy 1.27 2.54)
+						(xy 1.27 0.635) (xy 1.27 0)
 					)
 					(stroke
 						(width 0.254)
@@ -1801,10 +1917,22 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 6.35) (xy 3.175 6.35)
+						(xy 1.27 -0.635) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.905) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1831,6 +1959,18 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 6.35) (xy 3.175 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -1867,8 +2007,9 @@
 				)
 				(pin passive line
 					(at -6.35 6.35 0)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1921,8 +2062,9 @@
 				)
 				(pin passive line
 					(at 8.89 6.35 180)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1938,17 +2080,24 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Relay_6"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "K"
 				(at 3.81 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1958,6 +2107,8 @@
 			)
 			(property "Value" "Relay"
 				(at 1.27 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1967,48 +2118,58 @@
 			)
 			(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 				(at 11.43 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "Single Pole Relay SPDT"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Relay*SPDT*SANYOU*SRD*Series*Form*C*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Relay_6_0_0"
@@ -2076,31 +2237,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.905) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.635) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.635) (xy 1.27 0)
+						(xy 1.27 3.175) (xy 1.27 2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -2124,7 +2261,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 3.175) (xy 1.27 2.54)
+						(xy 1.27 0.635) (xy 1.27 0)
 					)
 					(stroke
 						(width 0.254)
@@ -2136,10 +2273,22 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 6.35) (xy 3.175 6.35)
+						(xy 1.27 -0.635) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.905) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -2166,6 +2315,18 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 6.35) (xy 3.175 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -2202,8 +2363,9 @@
 				)
 				(pin passive line
 					(at -6.35 6.35 0)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2256,8 +2418,9 @@
 				)
 				(pin passive line
 					(at 8.89 6.35 180)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2273,17 +2436,24 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Relay_7"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "K"
 				(at 3.81 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2293,6 +2463,8 @@
 			)
 			(property "Value" "Relay"
 				(at 1.27 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2302,48 +2474,58 @@
 			)
 			(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 				(at 11.43 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "Single Pole Relay SPDT"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Relay*SPDT*SANYOU*SRD*Series*Form*C*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Relay_7_0_0"
@@ -2411,31 +2593,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.905) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.635) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.635) (xy 1.27 0)
+						(xy 1.27 3.175) (xy 1.27 2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -2459,7 +2617,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 3.175) (xy 1.27 2.54)
+						(xy 1.27 0.635) (xy 1.27 0)
 					)
 					(stroke
 						(width 0.254)
@@ -2471,10 +2629,22 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 6.35) (xy 3.175 6.35)
+						(xy 1.27 -0.635) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.905) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -2501,6 +2671,18 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 6.35) (xy 3.175 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -2537,8 +2719,9 @@
 				)
 				(pin passive line
 					(at -6.35 6.35 0)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2591,8 +2774,9 @@
 				)
 				(pin passive line
 					(at 8.89 6.35 180)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2608,16 +2792,25 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "SW_Rotary_4x3_1"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
 				(at 0 20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2626,6 +2819,8 @@
 			)
 			(property "Value" "SW_Rotary_4x3"
 				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2634,54 +2829,51 @@
 			)
 			(property "Footprint" ""
 				(at -2.54 22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf"
 				(at -2.54 22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "4 rotary switches with 3 positions"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "rotary switch 4x3"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "SW_Rotary_4x3_1_0_0"
 				(circle
-					(center -4.445 -15.24)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -4.445 -5.08)
+					(center -4.445 15.24)
 					(radius 0.635)
 					(stroke
 						(width 0)
@@ -2703,7 +2895,18 @@
 					)
 				)
 				(circle
-					(center -4.445 15.24)
+					(center -4.445 -5.08)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -4.445 -15.24)
 					(radius 0.635)
 					(stroke
 						(width 0)
@@ -2715,19 +2918,7 @@
 				)
 				(polyline
 					(pts
-						(xy -3.81 -15.0876) (xy 4.4704 -12.9032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -4.9276) (xy 4.4704 -2.7432)
+						(xy -3.81 15.3924) (xy 4.4196 17.6276)
 					)
 					(stroke
 						(width 0)
@@ -2751,7 +2942,7 @@
 				)
 				(polyline
 					(pts
-						(xy -3.81 15.3924) (xy 4.4196 17.6276)
+						(xy -3.81 -4.9276) (xy 4.4704 -2.7432)
 					)
 					(stroke
 						(width 0)
@@ -2763,175 +2954,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -14.0716) (xy 0 -13.8176)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -12.7) (xy 0 -11.43)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -10.16) (xy 0 -8.89)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -10.16) (xy 0 -8.89)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -7.62) (xy 0 -6.35)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -5.08) (xy 0 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 5.08) (xy 0 6.35)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 7.62) (xy 0 8.89)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 10.16) (xy 0 11.43)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 10.16) (xy 0 11.43)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 12.7) (xy 0 13.97)
+						(xy -3.81 -15.0876) (xy 4.4704 -12.9032)
 					)
 					(stroke
 						(width 0)
@@ -2955,7 +2978,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.715 -17.78) (xy 8.89 -17.78)
+						(xy 0 12.7) (xy 0 13.97)
 					)
 					(stroke
 						(width 0)
@@ -2967,7 +2990,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.715 -12.7) (xy 8.89 -12.7)
+						(xy 0 10.16) (xy 0 11.43)
 					)
 					(stroke
 						(width 0)
@@ -2979,7 +3002,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.715 -7.62) (xy 8.89 -7.62)
+						(xy 0 10.16) (xy 0 11.43)
 					)
 					(stroke
 						(width 0)
@@ -2991,7 +3014,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.715 -2.54) (xy 8.89 -2.54)
+						(xy 0 7.62) (xy 0 8.89)
 					)
 					(stroke
 						(width 0)
@@ -3003,7 +3026,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.715 2.54) (xy 8.89 2.54)
+						(xy 0 5.08) (xy 0 6.35)
 					)
 					(stroke
 						(width 0)
@@ -3015,8 +3038,227 @@
 				)
 				(polyline
 					(pts
-						(xy 5.715 7.62) (xy 8.89 7.62)
+						(xy 0 2.54) (xy 0 3.81)
 					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -7.62) (xy 0 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -10.16) (xy 0 -8.89)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -10.16) (xy 0 -8.89)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -12.7) (xy 0 -11.43)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -14.0716) (xy 0 -13.8176)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 17.78)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 12.7)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 7.62)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 2.54)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 -7.62)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 -12.7)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 -17.78)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.715 17.78) (xy 8.89 17.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.715 15.24)
+					(radius 0.635)
 					(stroke
 						(width 0)
 						(type default)
@@ -3039,7 +3281,30 @@
 				)
 				(polyline
 					(pts
-						(xy 5.715 17.78) (xy 8.89 17.78)
+						(xy 5.715 7.62) (xy 8.89 7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.715 5.08)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.715 2.54) (xy 8.89 2.54)
 					)
 					(stroke
 						(width 0)
@@ -3051,7 +3316,30 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 -15.24) (xy 8.89 -15.24)
+						(xy 5.715 -2.54) (xy 8.89 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.715 -5.08)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.715 -7.62) (xy 8.89 -7.62)
 					)
 					(stroke
 						(width 0)
@@ -3063,7 +3351,42 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 -5.08) (xy 8.89 -5.08)
+						(xy 5.715 -12.7) (xy 8.89 -12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.715 -15.24)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.715 -17.78) (xy 8.89 -17.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 15.24) (xy 8.89 15.24)
 					)
 					(stroke
 						(width 0)
@@ -3087,7 +3410,7 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 15.24) (xy 8.89 15.24)
+						(xy 6.35 -5.08) (xy 8.89 -5.08)
 					)
 					(stroke
 						(width 0)
@@ -3097,130 +3420,10 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 5.08 -17.78)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
+				(polyline
+					(pts
+						(xy 6.35 -15.24) (xy 8.89 -15.24)
 					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 -12.7)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 -7.62)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 -2.54)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 2.54)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 7.62)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 12.7)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 17.78)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.715 -15.24)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.715 -5.08)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.715 5.08)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.715 15.24)
-					(radius 0.635)
 					(stroke
 						(width 0)
 						(type default)
@@ -3233,19 +3436,7 @@
 			(symbol "SW_Rotary_4x3_1_0_1"
 				(polyline
 					(pts
-						(xy -5.08 -15.24) (xy -8.89 -15.24)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -5.08) (xy -8.89 -5.08)
+						(xy -5.08 15.24) (xy -8.89 15.24)
 					)
 					(stroke
 						(width 0)
@@ -3269,7 +3460,19 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 15.24) (xy -8.89 15.24)
+						(xy -5.08 -5.08) (xy -8.89 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -15.24) (xy -8.89 -15.24)
 					)
 					(stroke
 						(width 0)
@@ -3311,132 +3514,6 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -12.7 180)
-					(length 3.81)
-					(name "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -15.24 180)
-					(length 3.81)
-					(name "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -17.78 180)
-					(length 3.81)
-					(name "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 15.24 0)
-					(length 3.81)
-					(name "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 5.08 0)
-					(length 3.81)
-					(name "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -5.08 0)
-					(length 3.81)
-					(name "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -15.24 0)
-					(length 3.81)
-					(name "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 12.7 15.24 180)
 					(length 3.81)
 					(name "2"
@@ -3580,17 +3657,152 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 12.7 -12.7 180)
+					(length 3.81)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -15.24 180)
+					(length 3.81)
+					(name "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -17.78 180)
+					(length 3.81)
+					(name "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 15.24 0)
+					(length 3.81)
+					(name "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 5.08 0)
+					(length 3.81)
+					(name "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -5.08 0)
+					(length 3.81)
+					(name "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -15.24 0)
+					(length 3.81)
+					(name "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Switch:SW_Rotary_4x3"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
 				(at 0 20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3599,6 +3811,8 @@
 			)
 			(property "Value" "SW_Rotary_4x3"
 				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3607,54 +3821,51 @@
 			)
 			(property "Footprint" ""
 				(at -2.54 22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf"
 				(at -2.54 22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "4 rotary switches with 3 positions"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "rotary switch 4x3"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "SW_Rotary_4x3_0_0"
 				(circle
-					(center -4.445 -15.24)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -4.445 -5.08)
+					(center -4.445 15.24)
 					(radius 0.635)
 					(stroke
 						(width 0)
@@ -3676,7 +3887,18 @@
 					)
 				)
 				(circle
-					(center -4.445 15.24)
+					(center -4.445 -5.08)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -4.445 -15.24)
 					(radius 0.635)
 					(stroke
 						(width 0)
@@ -3688,19 +3910,7 @@
 				)
 				(polyline
 					(pts
-						(xy -3.81 -15.0876) (xy 4.4704 -12.9032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -4.9276) (xy 4.4704 -2.7432)
+						(xy -3.81 15.3924) (xy 4.4196 17.6276)
 					)
 					(stroke
 						(width 0)
@@ -3724,7 +3934,7 @@
 				)
 				(polyline
 					(pts
-						(xy -3.81 15.3924) (xy 4.4196 17.6276)
+						(xy -3.81 -4.9276) (xy 4.4704 -2.7432)
 					)
 					(stroke
 						(width 0)
@@ -3736,175 +3946,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -14.0716) (xy 0 -13.8176)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -12.7) (xy 0 -11.43)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -10.16) (xy 0 -8.89)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -10.16) (xy 0 -8.89)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -7.62) (xy 0 -6.35)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -5.08) (xy 0 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 5.08) (xy 0 6.35)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 7.62) (xy 0 8.89)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 10.16) (xy 0 11.43)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 10.16) (xy 0 11.43)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 12.7) (xy 0 13.97)
+						(xy -3.81 -15.0876) (xy 4.4704 -12.9032)
 					)
 					(stroke
 						(width 0)
@@ -3928,7 +3970,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.715 -17.78) (xy 8.89 -17.78)
+						(xy 0 12.7) (xy 0 13.97)
 					)
 					(stroke
 						(width 0)
@@ -3940,7 +3982,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.715 -12.7) (xy 8.89 -12.7)
+						(xy 0 10.16) (xy 0 11.43)
 					)
 					(stroke
 						(width 0)
@@ -3952,7 +3994,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.715 -7.62) (xy 8.89 -7.62)
+						(xy 0 10.16) (xy 0 11.43)
 					)
 					(stroke
 						(width 0)
@@ -3964,7 +4006,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.715 -2.54) (xy 8.89 -2.54)
+						(xy 0 7.62) (xy 0 8.89)
 					)
 					(stroke
 						(width 0)
@@ -3976,7 +4018,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.715 2.54) (xy 8.89 2.54)
+						(xy 0 5.08) (xy 0 6.35)
 					)
 					(stroke
 						(width 0)
@@ -3988,8 +4030,227 @@
 				)
 				(polyline
 					(pts
-						(xy 5.715 7.62) (xy 8.89 7.62)
+						(xy 0 2.54) (xy 0 3.81)
 					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -7.62) (xy 0 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -10.16) (xy 0 -8.89)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -10.16) (xy 0 -8.89)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -12.7) (xy 0 -11.43)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -14.0716) (xy 0 -13.8176)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 17.78)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 12.7)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 7.62)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 2.54)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 -7.62)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 -12.7)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 -17.78)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.715 17.78) (xy 8.89 17.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.715 15.24)
+					(radius 0.635)
 					(stroke
 						(width 0)
 						(type default)
@@ -4012,7 +4273,30 @@
 				)
 				(polyline
 					(pts
-						(xy 5.715 17.78) (xy 8.89 17.78)
+						(xy 5.715 7.62) (xy 8.89 7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.715 5.08)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.715 2.54) (xy 8.89 2.54)
 					)
 					(stroke
 						(width 0)
@@ -4024,7 +4308,30 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 -15.24) (xy 8.89 -15.24)
+						(xy 5.715 -2.54) (xy 8.89 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.715 -5.08)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.715 -7.62) (xy 8.89 -7.62)
 					)
 					(stroke
 						(width 0)
@@ -4036,7 +4343,42 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 -5.08) (xy 8.89 -5.08)
+						(xy 5.715 -12.7) (xy 8.89 -12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.715 -15.24)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.715 -17.78) (xy 8.89 -17.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 15.24) (xy 8.89 15.24)
 					)
 					(stroke
 						(width 0)
@@ -4060,7 +4402,7 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 15.24) (xy 8.89 15.24)
+						(xy 6.35 -5.08) (xy 8.89 -5.08)
 					)
 					(stroke
 						(width 0)
@@ -4070,130 +4412,10 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 5.08 -17.78)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
+				(polyline
+					(pts
+						(xy 6.35 -15.24) (xy 8.89 -15.24)
 					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 -12.7)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 -7.62)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 -2.54)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 2.54)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 7.62)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 12.7)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 17.78)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.715 -15.24)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.715 -5.08)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.715 5.08)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.715 15.24)
-					(radius 0.635)
 					(stroke
 						(width 0)
 						(type default)
@@ -4206,19 +4428,7 @@
 			(symbol "SW_Rotary_4x3_0_1"
 				(polyline
 					(pts
-						(xy -5.08 -15.24) (xy -8.89 -15.24)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -5.08) (xy -8.89 -5.08)
+						(xy -5.08 15.24) (xy -8.89 15.24)
 					)
 					(stroke
 						(width 0)
@@ -4242,7 +4452,19 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 15.24) (xy -8.89 15.24)
+						(xy -5.08 -5.08) (xy -8.89 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -15.24) (xy -8.89 -15.24)
 					)
 					(stroke
 						(width 0)
@@ -4284,132 +4506,6 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -12.7 180)
-					(length 3.81)
-					(name "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -15.24 180)
-					(length 3.81)
-					(name "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -17.78 180)
-					(length 3.81)
-					(name "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 15.24 0)
-					(length 3.81)
-					(name "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 5.08 0)
-					(length 3.81)
-					(name "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -5.08 0)
-					(length 3.81)
-					(name "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -15.24 0)
-					(length 3.81)
-					(name "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 12.7 15.24 180)
 					(length 3.81)
 					(name "2"
@@ -4553,17 +4649,152 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 12.7 -12.7 180)
+					(length 3.81)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -15.24 180)
+					(length 3.81)
+					(name "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -17.78 180)
+					(length 3.81)
+					(name "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 15.24 0)
+					(length 3.81)
+					(name "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 5.08 0)
+					(length 3.81)
+					(name "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -5.08 0)
+					(length 3.81)
+					(name "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -15.24 0)
+					(length 3.81)
+					(name "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Switch:SW_SPDT"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4572,6 +4803,8 @@
 			)
 			(property "Value" "SW_SPDT"
 				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4580,38 +4813,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Switch, single pole double throw"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "SW_SPDT_0_1"
@@ -4639,7 +4880,7 @@
 					)
 				)
 				(circle
-					(center 2.032 -2.54)
+					(center 2.032 2.54)
 					(radius 0.4572)
 					(stroke
 						(width 0)
@@ -4650,7 +4891,7 @@
 					)
 				)
 				(circle
-					(center 2.032 2.54)
+					(center 2.032 -2.54)
 					(radius 0.4572)
 					(stroke
 						(width 0)
@@ -4728,17 +4969,24 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hvac-relays-symbols:Relay"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "K"
 				(at 3.81 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4748,6 +4996,8 @@
 			)
 			(property "Value" "Relay"
 				(at 1.27 -11.43 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4757,48 +5007,58 @@
 			)
 			(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 				(at 11.43 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "Single Pole Relay SPDT"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Relay*SPDT*SANYOU*SRD*Series*Form*C*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Relay_0_0"
@@ -4866,31 +5126,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.905) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.635) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.635) (xy 1.27 0)
+						(xy 1.27 3.175) (xy 1.27 2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -4914,7 +5150,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 3.175) (xy 1.27 2.54)
+						(xy 1.27 0.635) (xy 1.27 0)
 					)
 					(stroke
 						(width 0.254)
@@ -4926,10 +5162,22 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 6.35) (xy 3.175 6.35)
+						(xy 1.27 -0.635) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.905) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -4956,6 +5204,18 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 6.35) (xy 3.175 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -4992,8 +5252,9 @@
 				)
 				(pin passive line
 					(at -6.35 6.35 0)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5046,8 +5307,9 @@
 				)
 				(pin passive line
 					(at 8.89 6.35 180)
-					(length 2.54) hide
-					(name "~"
+					(length 2.54)
+					(hide yes)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5063,7 +5325,486 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 213.36 119.888)
+		(end 265.43 142.494)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "033b8e36-62fc-416a-a3c2-44434f8774c6")
+	)
+	(rectangle
+		(start 111.76 17.78)
+		(end 158.75 46.99)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0a189883-4ff4-4f4a-b298-c9ae4f7e2755")
+	)
+	(rectangle
+		(start 12.7 26.67)
+		(end 54.61 105.41)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0a1ad850-d272-46b0-8e9a-c8c4bb42515b")
+	)
+	(rectangle
+		(start 181.61 87.63)
+		(end 205.74 128.27)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "4f939592-202e-408d-9977-35e881396e4f")
+	)
+	(rectangle
+		(start 62.23 13.97)
+		(end 210.82 17.78)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "6800549e-57e1-4dc1-8752-9436b53b6064")
+	)
+	(rectangle
+		(start 101.6 96.52)
+		(end 133.35 148.59)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "6bb67832-b51a-47bb-938a-4370495eb210")
+	)
+	(rectangle
+		(start 158.75 17.78)
+		(end 210.82 58.42)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "78a34a18-2f81-4a01-8c98-5deb4a775033")
+	)
+	(rectangle
+		(start 54.61 107.95)
+		(end 81.788 127)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a670f46d-a392-47d6-ab9f-3cb9f23db03b")
+	)
+	(rectangle
+		(start 147.32 133.35)
+		(end 201.93 168.91)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b135eeb4-66f7-46cf-ba58-818bcadc1f80")
+	)
+	(rectangle
+		(start 62.23 17.78)
+		(end 111.76 46.99)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b637e7ee-8b82-42d0-a8dd-e33485bebf45")
+	)
+	(rectangle
+		(start 16.51 163.83)
+		(end 71.12 199.39)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ca521605-042b-43cf-b63f-01848cf27f08")
+	)
+	(rectangle
+		(start 213.36 13.97)
+		(end 265.43 118.11)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "cc09d945-4c63-45cb-975f-b9bb750fb4f3")
+	)
+	(rectangle
+		(start 213.36 144.018)
+		(end 265.43 156.21)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e53ab6a6-9457-41b4-9c97-86167899fe1e")
+	)
+	(rectangle
+		(start 68.58 52.07)
+		(end 133.35 86.36)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ec8d52c5-cc10-4b3c-9aa1-8fbb3184c39a")
+	)
+	(rectangle
+		(start 93.98 163.83)
+		(end 140.97 199.39)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "f9b678a2-0dde-4f8f-a4f9-dceae183f2c6")
+	)
+	(text "Wall thermostat\n(call & on/off)"
+		(exclude_from_sim no)
+		(at 182.372 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "09577e98-4294-4580-8379-9f6cabd7bcc2")
+	)
+	(text "EWC-OR-3 Behavior"
+		(exclude_from_sim no)
+		(at 72.898 16.002 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "1917ca26-772d-4b6a-94d6-ee682ce65859")
+	)
+	(text "Relay correlations (smart mode)"
+		(exclude_from_sim no)
+		(at 214.376 145.796 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "1afb8dac-4145-450d-96e7-38c5105df726")
+	)
+	(text "Wall thermostat"
+		(exclude_from_sim no)
+		(at 40.894 104.902 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "22fbb540-14f8-4f87-b33f-169b5ab86f32")
+	)
+	(text "Thermostat selector (smart/wall)"
+		(exclude_from_sim no)
+		(at 13.208 28.702 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "2812467a-2eb1-4bb7-8df5-5d158fb0eda4")
+	)
+	(text "Relay states (smart mode)"
+		(exclude_from_sim no)
+		(at 214.884 121.412 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "2b0a00bb-101f-459f-9aaf-42f8497f6edc")
+	)
+	(text "K1\nK2\nK3\nK4\nK5\nK6\nK7\nK8"
+		(exclude_from_sim no)
+		(at 216.408 134.112 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.2381)
+			)
+		)
+		(uuid "381d3fcc-84c0-419e-8073-7beccec681f4")
+	)
+	(text "cooling\ncooling\nfan on\ncooling\nzone 1 call\nzone 2 call\nsystem off\nsystem off"
+		(exclude_from_sim no)
+		(at 220.98 133.858 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3a79698d-8ada-427d-ae2a-802cd14f3445")
+	)
+	(text "on (NO)"
+		(exclude_from_sim no)
+		(at 220.98 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "40bcda53-2b4a-49f8-ad60-1900a737c612")
+	)
+	(text "Smart system on/off"
+		(exclude_from_sim no)
+		(at 94.234 164.846 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "44d3f529-1a16-4bac-a931-a1751790aca7")
+	)
+	(text "Smart fan control"
+		(exclude_from_sim no)
+		(at 69.088 54.102 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "4703789a-5938-4121-af46-7a7080c32f72")
+	)
+	(text "Smart mode control"
+		(exclude_from_sim no)
+		(at 147.574 166.624 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "59653d90-9da9-4dca-a201-245bdb8b5cc2")
+	)
+	(text "K1 & K4 (heat/cool) should always the same\nK8 on (NO) means K7 should be on (NO)\n    but K7 may be on (NO) without K8"
+		(exclude_from_sim no)
+		(at 214.884 149.098 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "5d4dd151-27d8-4e42-8162-3a6177960c66")
+	)
+	(text "Wall fan control"
+		(exclude_from_sim no)
+		(at 55.118 109.474 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "61c53a5c-97ab-47e2-9ca5-062ed15dafac")
+	)
+	(text "Relay configuration (smart mode)"
+		(exclude_from_sim no)
+		(at 214.63 16.002 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "68d61d4c-2d25-4660-8baf-73556ac20aca")
+	)
+	(text "Fan mode:\n\n  Auto\n    - HVAC-15 conneted HVAC-14 if cooling\n    - HVAC-15 not connected otherwise\n\n  On\n    - HVAC-15 connected to HVAC-16"
+		(exclude_from_sim no)
+		(at 112.522 19.304 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "8b6f2cab-e9f9-4a2f-a1e6-1ca144822ab4")
+	)
+	(text "heating\nheating\nfan auto\nheating\nzone 1 no call\nzone 2 no call\nsystem on\nsystem on"
+		(exclude_from_sim no)
+		(at 236.22 133.858 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a3f3a9e4-277f-4a16-9146-9550ae1fc7e9")
+	)
+	(text "Smart call"
+		(exclude_from_sim no)
+		(at 17.018 165.862 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "d11c0f57-5b2c-489c-9a07-51769cba4eed")
+	)
+	(text "off (NC)"
+		(exclude_from_sim no)
+		(at 236.22 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "d4298a30-4514-42cf-b190-433c96b151a8")
+	)
+	(text "Wall mode control"
+		(exclude_from_sim no)
+		(at 102.362 98.806 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "d549e654-467a-46ee-8d5b-e6d242365454")
+	)
+	(text "System mode:\n\n  Off\n    - HVAC-12 not connected\n    - HVAC-18 not connected\n\n  Cooling\n    - HVAC-12 connected to HVAC-14\n    - HVAC-18 connected to HVAC-19\n    - HVAC-15 connected to HVAC-14 if fan auto\n\n  Heating\n    - HVAC-12 connected to HVAC-11\n    - HVAC-18 connected to HVAC-17\n    - HVAC-15 not connected if fan auto\n\n  Fan only mode\n    - HVAC-12 not connected\n    - HVAC-18 connected to HVAC-19"
+		(exclude_from_sim no)
+		(at 159.766 19.304 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "dfa750d9-003f-4a3b-9977-5ed24f36b786")
+	)
+	(text "Calling for heat/cooling:\n  \n  Zone 1\n    - T5-Z1 connected to T6-Z1 if cooling\n    - T5-Z1 connected to T4-Z1 if heating\n    - T6-Z1 is always connected to HVAC-19\n    - T4-Z1 is always connected to HVAC-17\n\n  Zone 2\n    - T5-Z2 connected to T6-Z2 if cooling\n    - T5-Z2 connected to T4-Z2 if heating\n    - T6-Z2 is always connected to HVAC-19\n    - T4-Z2 is always connected to HVAC-17\n"
+		(exclude_from_sim no)
+		(at 62.992 19.304 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "e473aad5-d24a-4df8-bb5d-83c33ca55a11")
+	)
+	(text "System mode (skipped relays are irrelevant):\n\n  Off\n    - K7 on (NO)\n    - K8 on (NO)\n\n  Cooling\n    - K1 on (NO)\n    - K2 on (NO)\n    - K3 fan control\n    - K4 on (NO)\n    - K5 zone 1 call\n    - K6 zone 2 call\n    - K7 off (NC)\n    - K8 off (NC)\n\n  Heating\n    - K1 off (NC)\n    - K2 off (NC)\n    - K3 fan control (see below)\n    - K4 off (NC)\n    - K5 zone 1 call\n    - K6 zone 2 call\n    - K7 off (NC)\n    - K8 off (NC)\n\n  Fan only mode\n    - K2 on (NO)\n    - K3 fan control (see below)\n    - K4 off (NC)\n    - K5 off (NC)\n    - K6 off (NC)\n    - K7 on (NO)\n    - K8 off (NC)\n\nFan control:\n\n  Cooling\n    - auto = K3 off (NC)\n    - on = K3 on (NO)\n  \n  Heating\n    - off = K3 off (NC) [auto]\n    - on = K3 on (NO)\n\n  Fan only\n    - off = K3 off (NC)\n    - on = K3 on (NO)\n"
+		(exclude_from_sim no)
+		(at 214.63 19.304 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "ea65bfc1-d053-4c94-bb9a-98eb7c4d406c")
+	)
+	(text "We can leave W & Y\nconnected to T4 & T6\nbecause if SW1 is set\nto smart, R is not\nconnected."
+		(exclude_from_sim no)
+		(at 182.626 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "fcbc3ab2-59df-4b82-a26f-88b8ce5557e5")
 	)
 	(junction
 		(at 135.89 114.3)
@@ -6449,484 +7190,6 @@
 		)
 		(uuid "ffed0778-d2f6-4837-8194-aaa36b466c53")
 	)
-	(rectangle
-		(start 213.36 119.888)
-		(end 265.43 142.494)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 033b8e36-62fc-416a-a3c2-44434f8774c6)
-	)
-	(rectangle
-		(start 111.76 17.78)
-		(end 158.75 46.99)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 0a189883-4ff4-4f4a-b298-c9ae4f7e2755)
-	)
-	(rectangle
-		(start 12.7 26.67)
-		(end 54.61 105.41)
-		(stroke
-			(width 0)
-			(type dot)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 0a1ad850-d272-46b0-8e9a-c8c4bb42515b)
-	)
-	(rectangle
-		(start 181.61 87.63)
-		(end 205.74 128.27)
-		(stroke
-			(width 0)
-			(type dot)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 4f939592-202e-408d-9977-35e881396e4f)
-	)
-	(rectangle
-		(start 62.23 13.97)
-		(end 210.82 17.78)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 6800549e-57e1-4dc1-8752-9436b53b6064)
-	)
-	(rectangle
-		(start 101.6 96.52)
-		(end 133.35 148.59)
-		(stroke
-			(width 0)
-			(type dot)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 6bb67832-b51a-47bb-938a-4370495eb210)
-	)
-	(rectangle
-		(start 158.75 17.78)
-		(end 210.82 58.42)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 78a34a18-2f81-4a01-8c98-5deb4a775033)
-	)
-	(rectangle
-		(start 54.61 107.95)
-		(end 81.788 127)
-		(stroke
-			(width 0)
-			(type dot)
-		)
-		(fill
-			(type none)
-		)
-		(uuid a670f46d-a392-47d6-ab9f-3cb9f23db03b)
-	)
-	(rectangle
-		(start 147.32 133.35)
-		(end 201.93 168.91)
-		(stroke
-			(width 0)
-			(type dot)
-		)
-		(fill
-			(type none)
-		)
-		(uuid b135eeb4-66f7-46cf-ba58-818bcadc1f80)
-	)
-	(rectangle
-		(start 62.23 17.78)
-		(end 111.76 46.99)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid b637e7ee-8b82-42d0-a8dd-e33485bebf45)
-	)
-	(rectangle
-		(start 16.51 163.83)
-		(end 71.12 199.39)
-		(stroke
-			(width 0)
-			(type dot)
-		)
-		(fill
-			(type none)
-		)
-		(uuid ca521605-042b-43cf-b63f-01848cf27f08)
-	)
-	(rectangle
-		(start 213.36 13.97)
-		(end 265.43 118.11)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid cc09d945-4c63-45cb-975f-b9bb750fb4f3)
-	)
-	(rectangle
-		(start 213.36 144.018)
-		(end 265.43 154.178)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid e53ab6a6-9457-41b4-9c97-86167899fe1e)
-	)
-	(rectangle
-		(start 68.58 52.07)
-		(end 133.35 86.36)
-		(stroke
-			(width 0)
-			(type dot)
-		)
-		(fill
-			(type none)
-		)
-		(uuid ec8d52c5-cc10-4b3c-9aa1-8fbb3184c39a)
-	)
-	(rectangle
-		(start 93.98 163.83)
-		(end 140.97 199.39)
-		(stroke
-			(width 0)
-			(type dot)
-		)
-		(fill
-			(type none)
-		)
-		(uuid f9b678a2-0dde-4f8f-a4f9-dceae183f2c6)
-	)
-	(text "Wall thermostat\n(call & on/off)"
-		(exclude_from_sim no)
-		(at 182.372 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left top)
-		)
-		(uuid "09577e98-4294-4580-8379-9f6cabd7bcc2")
-	)
-	(text "EWC-OR-3 Behavior"
-		(exclude_from_sim no)
-		(at 72.898 16.002 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "1917ca26-772d-4b6a-94d6-ee682ce65859")
-	)
-	(text "Relay correlations (smart mode)"
-		(exclude_from_sim no)
-		(at 214.376 145.796 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "1afb8dac-4145-450d-96e7-38c5105df726")
-	)
-	(text "Wall thermostat"
-		(exclude_from_sim no)
-		(at 40.894 104.902 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left top)
-		)
-		(uuid "22fbb540-14f8-4f87-b33f-169b5ab86f32")
-	)
-	(text "Thermostat selector (smart/wall)"
-		(exclude_from_sim no)
-		(at 13.208 28.702 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "2812467a-2eb1-4bb7-8df5-5d158fb0eda4")
-	)
-	(text "Relay states (smart mode)"
-		(exclude_from_sim no)
-		(at 214.884 121.412 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "2b0a00bb-101f-459f-9aaf-42f8497f6edc")
-	)
-	(text "K1\nK2\nK3\nK4\nK5\nK6\nK7\nK8"
-		(exclude_from_sim no)
-		(at 216.408 134.112 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.2381)
-			)
-		)
-		(uuid "381d3fcc-84c0-419e-8073-7beccec681f4")
-	)
-	(text "cooling\ncooling\nfan on\ncooling\nzone 1 call\nzone 2 call\nsystem off\nsystem off"
-		(exclude_from_sim no)
-		(at 220.98 133.858 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3a79698d-8ada-427d-ae2a-802cd14f3445")
-	)
-	(text "on (NO)"
-		(exclude_from_sim no)
-		(at 220.98 124.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "40bcda53-2b4a-49f8-ad60-1900a737c612")
-	)
-	(text "Smart system on/off"
-		(exclude_from_sim no)
-		(at 94.234 164.846 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left top)
-		)
-		(uuid "44d3f529-1a16-4bac-a931-a1751790aca7")
-	)
-	(text "Smart fan control"
-		(exclude_from_sim no)
-		(at 69.088 54.102 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "4703789a-5938-4121-af46-7a7080c32f72")
-	)
-	(text "Smart mode control"
-		(exclude_from_sim no)
-		(at 147.574 166.624 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left top)
-		)
-		(uuid "59653d90-9da9-4dca-a201-245bdb8b5cc2")
-	)
-	(text "K1 & K4 (heat/cool) should always the same\nK7 & K8 (sys on/off) should always be the same"
-		(exclude_from_sim no)
-		(at 213.868 149.098 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left top)
-		)
-		(uuid "5d4dd151-27d8-4e42-8162-3a6177960c66")
-	)
-	(text "Wall fan control"
-		(exclude_from_sim no)
-		(at 55.118 109.474 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "61c53a5c-97ab-47e2-9ca5-062ed15dafac")
-	)
-	(text "Relay configuration (smart mode)"
-		(exclude_from_sim no)
-		(at 214.63 16.002 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "68d61d4c-2d25-4660-8baf-73556ac20aca")
-	)
-	(text "Fan mode:\n\n  Auto\n    - HVAC-15 conneted HVAC-14 if cooling\n    - HVAC-15 not connected otherwise\n\n  On\n    - HVAC-15 connected to HVAC-16"
-		(exclude_from_sim no)
-		(at 112.522 19.304 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left top)
-		)
-		(uuid "8b6f2cab-e9f9-4a2f-a1e6-1ca144822ab4")
-	)
-	(text "heating\nheating\nfan auto\nheating\nzone 1 no call\nzone 2 no call\nsystem on\nsystem on"
-		(exclude_from_sim no)
-		(at 236.22 133.858 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a3f3a9e4-277f-4a16-9146-9550ae1fc7e9")
-	)
-	(text "Smart call"
-		(exclude_from_sim no)
-		(at 17.018 165.862 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "d11c0f57-5b2c-489c-9a07-51769cba4eed")
-	)
-	(text "off (NC)"
-		(exclude_from_sim no)
-		(at 236.22 124.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "d4298a30-4514-42cf-b190-433c96b151a8")
-	)
-	(text "Wall mode control"
-		(exclude_from_sim no)
-		(at 102.362 98.806 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "d549e654-467a-46ee-8d5b-e6d242365454")
-	)
-	(text "System mode:\n\n  Off\n    - HVAC-12 not connected\n    - HVAC-18 not connected\n\n  Cooling\n    - HVAC-12 connected to HVAC-14\n    - HVAC-18 connected to HVAC-19\n    - HVAC-15 connected to HVAC-14 if fan auto\n\n  Heating\n    - HVAC-12 connected to HVAC-11\n    - HVAC-18 connected to HVAC-17\n    - HVAC-15 not connected if fan auto\n\n  Fan only mode\n    - HVAC-12 not connected\n    - HVAC-18 connected to HVAC-19"
-		(exclude_from_sim no)
-		(at 159.766 19.304 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left top)
-		)
-		(uuid "dfa750d9-003f-4a3b-9977-5ed24f36b786")
-	)
-	(text "Calling for heat/cooling:\n  \n  Zone 1\n    - T5-Z1 connected to T6-Z1 if cooling\n    - T5-Z1 connected to T4-Z1 if heating\n    - T6-Z1 is always connected to HVAC-19\n    - T4-Z1 is always connected to HVAC-17\n\n  Zone 2\n    - T5-Z2 connected to T6-Z2 if cooling\n    - T5-Z2 connected to T4-Z2 if heating\n    - T6-Z2 is always connected to HVAC-19\n    - T4-Z2 is always connected to HVAC-17\n"
-		(exclude_from_sim no)
-		(at 62.992 19.304 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left top)
-		)
-		(uuid "e473aad5-d24a-4df8-bb5d-83c33ca55a11")
-	)
-	(text "System mode (skipped relays are irrelevant):\n\n  Off\n    - K7 on (NO)\n    - K8 on (NO)\n\n  Cooling\n    - K1 on (NO)\n    - K2 on (NO)\n    - K3 fan control\n    - K4 on (NO)\n    - K5 zone 1 call\n    - K6 zone 2 call\n    - K7 off (NC)\n    - K8 off (NC)\n\n  Heating\n    - K1 off (NC)\n    - K2 off (NC)\n    - K3 fan control (see below)\n    - K4 off (NC)\n    - K5 zone 1 call\n    - K6 zone 2 call\n    - K7 off (NC)\n    - K8 off (NC)\n\n  Fan only mode\n    - K2 on (NO)\n    - K3 fan control (see below)\n    - K4 off (NC)\n    - K5 off (NC)\n    - K6 off (NC)\n    - K7 on (NO)\n    - K8 off (NC)\n\nFan control:\n\n  Cooling\n    - auto = K3 off (NC)\n    - on   = K3 on (NO)\n  \n  Heating\n    - off  = K3 off (NC) [auto mode]\n    - on   = K3 on (NO)\n\n  Fan only\n    - off  = K3 off (NC)\n    - on   = K3 on (NO)\n"
-		(exclude_from_sim no)
-		(at 214.63 19.304 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left top)
-		)
-		(uuid "ea65bfc1-d053-4c94-bb9a-98eb7c4d406c")
-	)
-	(text "We can leave W & Y\nconnected to T4 & T6\nbecause if SW1 is set\nto smart, R is not\nconnected."
-		(exclude_from_sim no)
-		(at 182.626 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "fcbc3ab2-59df-4b82-a26f-88b8ce5557e5")
-	)
 	(global_label "Z2 R (24VAC)"
 		(shape input)
 		(at 44.45 88.9 270)
@@ -6941,12 +7204,14 @@
 		(uuid "0a29abf0-e4e0-4540-8188-426b81613cce")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 44.45 105.069 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -6963,11 +7228,13 @@
 		(uuid "21f9a7dc-eeea-41eb-92f3-9a36fbd97a62")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 19.05 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -6984,11 +7251,13 @@
 		(uuid "2920eca0-06a9-427e-b946-90b1d54f122c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 96.52 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -7005,11 +7274,13 @@
 		(uuid "2c225da9-b724-4b4e-bae9-282339224548")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 15.24 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -7026,11 +7297,13 @@
 		(uuid "37ad62b3-be04-4648-b44c-ba34fcc6d2d0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 213.36 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -7047,11 +7320,13 @@
 		(uuid "52d2c189-744b-497e-b985-56895195b50b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 177.8 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -7069,12 +7344,14 @@
 		(uuid "670a8280-579d-4330-ad29-b4df6355ae0d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 48.26 105.069 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7092,12 +7369,14 @@
 		(uuid "87933646-2343-4c8b-8791-a8ce528a099d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 202.6774 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -7114,11 +7393,13 @@
 		(uuid "9c084195-b963-4d6c-a4c0-23c78da87492")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 91.44 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -7135,11 +7416,13 @@
 		(uuid "9cd89a76-fcb0-4f0b-9248-60c3315f360a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 142.24 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -7157,12 +7440,14 @@
 		(uuid "a936f896-9ff1-4ab7-9893-9c5b0684c0a2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 202.6774 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -7180,12 +7465,14 @@
 		(uuid "afb57dfc-5865-4100-9385-c484e2011907")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 203.1008 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -7203,12 +7490,14 @@
 		(uuid "cb613e57-4295-43d8-a539-bdb9877bc158")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 203.1008 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -7225,11 +7514,13 @@
 		(uuid "d58b7a32-c0bb-4e27-8de0-373c266bd524")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 19.05 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -7246,11 +7537,13 @@
 		(uuid "dfa68cb4-50cf-464d-8ead-f179ba2559c1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 15.24 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -7267,11 +7560,13 @@
 		(uuid "f150e279-2542-47eb-9691-0a0e7ee11b8e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 199.39 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -7280,14 +7575,18 @@
 		(lib_id "hvac-relays-symbols:Relay")
 		(at 157.48 152.4 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08eb92c9-537f-486a-933a-f31a0d4b86c3")
 		(property "Reference" "K1"
 			(at 158.75 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7296,6 +7595,8 @@
 		)
 		(property "Value" "Heat (NC)/Cool (NO)"
 			(at 158.75 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7304,30 +7605,36 @@
 		)
 		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 			(at 168.91 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 			(at 154.94 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 			(at 154.94 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7347,7 +7654,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "K1")
 					(unit 1)
 				)
@@ -7358,55 +7665,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 96.52 160.02 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b199ebc-3bb8-421e-8285-e1084c933922")
 		(property "Reference" "JP9"
 			(at 91.44 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 93.98 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 96.52 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 96.52 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 96.52 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7417,7 +7736,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP9")
 					(unit 1)
 				)
@@ -7428,55 +7747,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 96.52 121.92 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b3ccf49-6842-4049-a996-fd346d60c033")
 		(property "Reference" "JP3"
 			(at 91.44 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 93.98 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 96.52 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 96.52 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 96.52 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7487,7 +7818,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP3")
 					(unit 1)
 				)
@@ -7498,57 +7829,69 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 62.23 55.88 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1161bd43-0887-4c51-9203-8eba47120d97")
 		(property "Reference" "JP17"
 			(at 63.5 54.6099 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 63.5 57.1499 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 62.23 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 62.23 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 62.23 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7559,7 +7902,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP17")
 					(unit 1)
 				)
@@ -7571,14 +7914,18 @@
 		(lib_id "hvac-relays-symbols:Relay")
 		(at 81.28 76.2 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b0d1fd0-b435-4a5f-b84a-26c4d285996d")
 		(property "Reference" "K3"
 			(at 82.55 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7587,6 +7934,8 @@
 		)
 		(property "Value" "Fan auto (NC)/Fan on (NO)"
 			(at 82.55 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7595,30 +7944,36 @@
 		)
 		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 			(at 92.71 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 			(at 78.74 76.2 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 			(at 78.74 76.2 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7638,7 +7993,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "K3")
 					(unit 1)
 				)
@@ -7650,13 +8005,17 @@
 		(lib_id "hvac-relays-symbols:Passthru")
 		(at 173.99 107.95 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "2141b4ff-06c6-4883-82a1-951c8ef9752c")
 		(property "Reference" "T4-Z1"
 			(at 173.99 108.204 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7664,8 +8023,10 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 173.99 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7674,29 +8035,35 @@
 		)
 		(property "Footprint" ""
 			(at 173.99 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 173.99 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 173.99 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7707,7 +8074,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "T4-Z1")
 					(unit 1)
 				)
@@ -7719,14 +8086,18 @@
 		(lib_id "hvac-relays-symbols:Relay")
 		(at 62.23 185.42 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "219735ac-8e39-43b9-a9fb-7d5a982359bc")
 		(property "Reference" "K6"
 			(at 60.96 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7735,6 +8106,8 @@
 		)
 		(property "Value" "Z2 call"
 			(at 60.96 173.99 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7743,30 +8116,36 @@
 		)
 		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 			(at 50.8 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 			(at 64.77 185.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 			(at 64.77 185.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7786,7 +8165,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "K6")
 					(unit 1)
 				)
@@ -7797,55 +8176,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 66.04 80.01 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33a82afd-700c-4b72-b678-1fd8bc3642a7")
 		(property "Reference" "JP5"
 			(at 60.96 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 63.5 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 66.04 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 66.04 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 66.04 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7856,7 +8247,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP5")
 					(unit 1)
 				)
@@ -7867,55 +8258,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 135.89 119.38 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39bdf376-6fde-4b1c-9e74-9895a3c15a02")
 		(property "Reference" "JP6"
 			(at 130.81 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 133.35 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 135.89 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 135.89 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 135.89 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7926,7 +8329,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP6")
 					(unit 1)
 				)
@@ -7938,13 +8341,17 @@
 		(lib_id "hvac-relays-symbols:Relay")
 		(at 127 187.96 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "46cd940e-89de-4c0b-8c55-1e1a2fdd59c8")
 		(property "Reference" "K8"
 			(at 128.27 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7953,6 +8360,8 @@
 		)
 		(property "Value" "HVAC-18"
 			(at 128.27 174.498 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7961,30 +8370,36 @@
 		)
 		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 			(at 138.43 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 			(at 124.46 187.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 			(at 124.46 187.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8004,7 +8419,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "K8")
 					(unit 1)
 				)
@@ -8015,55 +8430,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 152.4 113.03 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4dc51c13-3fd4-4778-8007-2d2497394865")
 		(property "Reference" "JP24"
 			(at 147.32 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 149.86 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 152.4 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 152.4 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 152.4 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8074,7 +8501,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP24")
 					(unit 1)
 				)
@@ -8086,13 +8513,17 @@
 		(lib_id "hvac-relays-symbols:Passthru")
 		(at 173.99 119.38 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "504d7a95-4105-41a6-b79f-fdcb02334e98")
 		(property "Reference" "T6-Z1"
 			(at 173.99 119.634 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8100,8 +8531,10 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 173.99 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8110,29 +8543,35 @@
 		)
 		(property "Footprint" ""
 			(at 173.99 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 173.99 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 173.99 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8143,7 +8582,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "T6-Z1")
 					(unit 1)
 				)
@@ -8154,57 +8593,69 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 57.15 55.88 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "539fa2eb-4b52-450e-ac56-6ab8a2213481")
 		(property "Reference" "JP4"
 			(at 58.42 54.6099 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 58.42 57.1499 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 57.15 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 57.15 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 57.15 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8215,7 +8666,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP4")
 					(unit 1)
 				)
@@ -8226,55 +8677,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 152.4 124.46 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57fb5f18-3f32-4418-86d6-7cbd4c9c5025")
 		(property "Reference" "JP25"
 			(at 147.32 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 149.86 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 152.4 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 152.4 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 152.4 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8285,7 +8748,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP25")
 					(unit 1)
 				)
@@ -8296,55 +8759,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 91.44 132.08 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "586e849e-2cf8-413a-a4e2-ba904351edbd")
 		(property "Reference" "JP20"
 			(at 86.36 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 88.9 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 91.44 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 91.44 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 91.44 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8355,7 +8830,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP20")
 					(unit 1)
 				)
@@ -8366,57 +8841,69 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 57.15 60.96 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e942bd1-f821-4b81-a7b4-299d27cc75d6")
 		(property "Reference" "JP2"
 			(at 58.42 59.6899 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 58.42 62.2299 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 57.15 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 57.15 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 57.15 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8427,7 +8914,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP2")
 					(unit 1)
 				)
@@ -8439,14 +8926,18 @@
 		(lib_id "hvac-relays-symbols:Relay")
 		(at 102.87 187.96 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "632d8f86-3bf5-4311-a1ed-ce94cf75178f")
 		(property "Reference" "K7"
 			(at 104.14 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8455,6 +8946,8 @@
 		)
 		(property "Value" "HVAC-12"
 			(at 104.14 173.99 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8463,30 +8956,36 @@
 		)
 		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 			(at 114.3 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 			(at 100.33 187.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 			(at 100.33 187.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8506,7 +9005,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "K7")
 					(unit 1)
 				)
@@ -8518,13 +9017,17 @@
 		(lib_id "hvac-relays-symbols:Passthru")
 		(at 173.99 124.46 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "66d5fdc7-de13-4b9f-864c-6dc3c5ad00dc")
 		(property "Reference" "T6-Z2"
 			(at 173.99 124.714 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8532,8 +9035,10 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 173.99 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8542,29 +9047,35 @@
 		)
 		(property "Footprint" ""
 			(at 173.99 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 173.99 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 173.99 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8575,7 +9086,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "T6-Z2")
 					(unit 1)
 				)
@@ -8587,14 +9098,18 @@
 		(lib_id "hvac-relays-symbols:Relay")
 		(at 191.77 158.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6bbe6a2c-8261-4fe8-8cbf-d0d117e2c60f")
 		(property "Reference" "K2"
 			(at 193.04 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8603,6 +9118,8 @@
 		)
 		(property "Value" "Heat (NC)/Cool (NO)"
 			(at 193.04 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8611,30 +9128,36 @@
 		)
 		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 			(at 203.2 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 			(at 189.23 158.75 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 			(at 189.23 158.75 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8654,7 +9177,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "K2")
 					(unit 1)
 				)
@@ -8666,14 +9189,18 @@
 		(lib_id "Switch:SW_Rotary_4x3")
 		(at 118.11 127 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d271368-8c93-4c2e-81cd-077f51b4b086")
 		(property "Reference" "SW2"
 			(at 118.11 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8682,6 +9209,8 @@
 		)
 		(property "Value" "Wall heat (NC)/Cool (NO)"
 			(at 118.11 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8690,29 +9219,35 @@
 		)
 		(property "Footprint" ""
 			(at 115.57 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf"
 			(at 115.57 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "4 rotary switches with 3 positions"
 			(at 118.11 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "16"
@@ -8765,7 +9300,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "SW2")
 					(unit 1)
 				)
@@ -8776,55 +9311,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 111.76 160.02 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74a0d269-e34f-4d7f-a080-99ab62dc177d")
 		(property "Reference" "JP11"
 			(at 106.68 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 109.22 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8835,7 +9382,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP11")
 					(unit 1)
 				)
@@ -8846,55 +9393,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 50.8 76.2 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89ffb971-1e96-42ac-8ecc-f817e2ef5c25")
 		(property "Reference" "JP14"
 			(at 45.72 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 48.26 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 50.8 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 50.8 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 50.8 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8905,7 +9464,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP14")
 					(unit 1)
 				)
@@ -8916,55 +9475,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 135.89 124.46 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "901561f4-acd3-44cb-83ba-8c28b6abf8a7")
 		(property "Reference" "JP16"
 			(at 130.81 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 133.35 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 135.89 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 135.89 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 135.89 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8975,7 +9546,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP16")
 					(unit 1)
 				)
@@ -8986,14 +9557,18 @@
 		(lib_id "Switch:SW_Rotary_4x3")
 		(at 31.75 63.5 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "993ac535-4a42-4115-a0ac-a37822ccb1fb")
 		(property "Reference" "SW1"
 			(at 31.75 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9002,6 +9577,8 @@
 		)
 		(property "Value" "Smart (NC)/Wall (NO)"
 			(at 31.75 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9011,29 +9588,35 @@
 		)
 		(property "Footprint" ""
 			(at 29.21 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf"
 			(at 29.21 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "4 rotary switches with 3 positions"
 			(at 31.75 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "16"
@@ -9086,7 +9669,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "SW1")
 					(unit 1)
 				)
@@ -9097,55 +9680,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 62.23 80.01 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9acea903-2cf0-4c4c-93f2-c170df1b65aa")
 		(property "Reference" "JP1"
 			(at 57.15 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 59.69 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 62.23 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 62.23 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 62.23 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9156,7 +9751,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP1")
 					(unit 1)
 				)
@@ -9167,55 +9762,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 48.26 76.2 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5297b07-e671-483b-9d02-4a839c7fa76b")
 		(property "Reference" "JP13"
 			(at 43.18 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 45.72 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 48.26 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 48.26 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 48.26 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9226,7 +9833,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP13")
 					(unit 1)
 				)
@@ -9237,55 +9844,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 147.32 124.46 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a643fc66-35b8-4b74-97c1-92e405dcd30f")
 		(property "Reference" "JP7"
 			(at 142.24 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 144.78 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 147.32 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 147.32 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 147.32 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9296,7 +9915,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP7")
 					(unit 1)
 				)
@@ -9307,55 +9926,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 135.89 156.21 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a976c830-1a1a-4440-bd10-2d5c48f494d0")
 		(property "Reference" "JP10"
 			(at 130.81 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 133.35 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9366,7 +9997,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP10")
 					(unit 1)
 				)
@@ -9377,55 +10008,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 68.58 166.37 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9c4fa21-8663-45bc-931b-4fec4b8d15b7")
 		(property "Reference" "JP15"
 			(at 63.5 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 66.04 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 68.58 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 68.58 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 68.58 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9436,7 +10079,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP15")
 					(unit 1)
 				)
@@ -9447,55 +10090,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 101.6 77.47 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad0e1bff-97d0-413e-884d-540aa0128bb0")
 		(property "Reference" "JP8"
 			(at 96.52 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 99.06 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 101.6 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 101.6 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 101.6 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9506,7 +10161,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP8")
 					(unit 1)
 				)
@@ -9518,14 +10173,18 @@
 		(at 68.58 121.92 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc0644f4-00b7-4160-a17c-05413fc2a925")
 		(property "Reference" "SW3"
 			(at 68.58 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9534,6 +10193,8 @@
 		)
 		(property "Value" "Fan Auto (NC) / On (NO)"
 			(at 68.58 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9542,29 +10203,35 @@
 		)
 		(property "Footprint" ""
 			(at 68.58 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 68.58 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Switch, single pole double throw"
 			(at 68.58 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9578,7 +10245,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "SW3")
 					(unit 1)
 				)
@@ -9589,55 +10256,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 96.52 132.08 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bdda6509-8287-4a70-abdf-65514e613d36")
 		(property "Reference" "JP21"
 			(at 91.44 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 93.98 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 96.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 96.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 96.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9648,7 +10327,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP21")
 					(unit 1)
 				)
@@ -9659,57 +10338,69 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 62.23 60.96 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c124d2f1-647b-4025-8c94-769e6ca6383b")
 		(property "Reference" "JP22"
 			(at 63.5 59.6899 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 63.5 62.2299 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 62.23 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 62.23 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 62.23 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9720,7 +10411,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP22")
 					(unit 1)
 				)
@@ -9731,55 +10422,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 152.4 132.08 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5aa2388-d81a-4598-92db-145a99e98f56")
 		(property "Reference" "JP18"
 			(at 147.32 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 149.86 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 152.4 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 152.4 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 152.4 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9790,7 +10493,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP18")
 					(unit 1)
 				)
@@ -9802,13 +10505,17 @@
 		(lib_id "hvac-relays-symbols:Passthru")
 		(at 173.99 113.03 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "ca5db69e-e984-44dd-a0a1-39869d3a2526")
 		(property "Reference" "T4-Z2"
 			(at 173.99 113.284 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9816,8 +10523,10 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 173.99 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9826,29 +10535,35 @@
 		)
 		(property "Footprint" ""
 			(at 173.99 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 173.99 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 173.99 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9859,7 +10574,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "T4-Z2")
 					(unit 1)
 				)
@@ -9871,14 +10586,18 @@
 		(lib_id "hvac-relays-symbols:Relay")
 		(at 39.37 185.42 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d27bd224-9a05-40d3-a677-cd84037c71d4")
 		(property "Reference" "K5"
 			(at 38.1 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9887,6 +10606,8 @@
 		)
 		(property "Value" "Z1 call"
 			(at 38.1 173.99 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9895,30 +10616,36 @@
 		)
 		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 			(at 27.94 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 			(at 41.91 185.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 			(at 41.91 185.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9938,7 +10665,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "K5")
 					(unit 1)
 				)
@@ -9949,55 +10676,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 135.89 109.22 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8cae266-0ed5-4f5c-b329-4b4188ccb374")
 		(property "Reference" "JP26"
 			(at 130.81 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 133.35 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 135.89 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 135.89 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 135.89 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10008,7 +10747,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP26")
 					(unit 1)
 				)
@@ -10019,14 +10758,18 @@
 		(lib_id "hvac-relays-symbols:Relay")
 		(at 114.3 73.66 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f61234bd-c88e-44cf-be42-5deb843a8702")
 		(property "Reference" "K4"
 			(at 115.57 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10035,6 +10778,8 @@
 		)
 		(property "Value" "Heat (NC)/Cool (NO)"
 			(at 115.57 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10043,30 +10788,36 @@
 		)
 		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
 			(at 125.73 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
 			(at 111.76 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
 			(at 111.76 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10086,7 +10837,7 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "K4")
 					(unit 1)
 				)
@@ -10097,55 +10848,67 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 50.8 166.37 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa0db9a1-800f-48e3-aedd-31728bbda813")
 		(property "Reference" "JP12"
 			(at 45.72 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Jumper_2_Small_Bridged"
 			(at 48.26 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 50.8 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 50.8 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
 			(at 50.8 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10156,11 +10919,16 @@
 		)
 		(instances
 			(project "hvac_relays"
-				(path "/2260bd6d-eaa6-476e-b855-5343af1e970d/8ce6a019-55b8-4ff8-ab85-2cfe623e2b70"
+				(path "/ca35ba8f-d468-4593-9919-c880156cdb1d"
 					(reference "JP12")
 					(unit 1)
 				)
 			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "3")
 		)
 	)
 )
