@@ -5,7 +5,7 @@
 	(uuid "e36ec63f-1639-4de9-b343-0c53def8a5aa")
 	(paper "USLetter")
 	(title_block
-		(title "Wall thermostat")
+		(title "Compound system")
 		(date "2026-07-05")
 		(rev "A")
 		(company "Emjek Cordover")

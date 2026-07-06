@@ -5,7 +5,7 @@
 	(uuid "0d75270d-ca69-46b9-aa79-f6d59cd0d830")
 	(paper "USLetter")
 	(title_block
-		(title "Smart thermostat")
+		(title "Compound system")
 		(date "2024-10-19")
 		(rev "B")
 		(company "Emjek Cordover")
