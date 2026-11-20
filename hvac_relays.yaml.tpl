@@ -15,6 +15,9 @@ logger:
 api:
   encryption:
     key: "op://Service Accounts/hvac-relays/API encryption key"
+  # Don't reboot when HA is unreachable: the manual temperatures (see below)
+  # need to survive HA being down.
+  reboot_timeout: 0s
 
 ota:
   - platform: esphome
@@ -32,10 +35,20 @@ wifi:
 
 captive_portal:
 
+# Backup UI for when Home Assistant is down. See the manual temperature
+# numbers below.
+web_server:
+  version: 3
+  local: true
+  ota: false
+  auth:
+    username: "op://Service Accounts/hvac-relays/Web UI username"
+    password: "op://Service Accounts/hvac-relays/Web UI password"
+
 climate:
   - &thermostat-zone
     name: "Zone 1"
-    sensor: temperature_zone_1
+    sensor: effective_temperature_zone_1
     idle_action:
       - output.turn_off: K5
     heat_action:
@@ -118,7 +131,7 @@ climate:
 
   - <<: *thermostat-zone
     name: "Zone 2"
-    sensor: temperature_zone_2
+    sensor: effective_temperature_zone_2
     idle_action:
       - output.turn_off: K6
     heat_action:
@@ -145,6 +158,77 @@ sensor:
     filters:
       - lambda: return (x - 32.0) * (5.0/9.0);
     entity_id: sensor.sbht_003c_ee92_temperature
+
+  # What the thermostats actually use: the HA reading while HA is connected,
+  # otherwise the manual temperature if it was set in the last 4 hours,
+  # otherwise NaN (which makes the thermostat stop calling).
+  - platform: template
+    id: effective_temperature_zone_1
+    internal: true
+    update_interval: 10s
+    lambda: |-
+      if (api::global_api_server->is_connected(true)) {
+        // HA is up; trust its reading (NaN if the sensor is unavailable)
+        return id(temperature_zone_1).state;
+      }
+      const uint32_t set_at = id(manual_temperature_zone_1_set_at);
+      if (set_at != 0 && millis() - set_at < 4 * 60 * 60 * 1000UL) {
+        return (id(manual_temperature_zone_1).state - 32.0) * (5.0/9.0);
+      }
+      return NAN;
+  - platform: template
+    id: effective_temperature_zone_2
+    internal: true
+    update_interval: 10s
+    lambda: |-
+      if (api::global_api_server->is_connected(true)) {
+        // HA is up; trust its reading (NaN if the sensor is unavailable)
+        return id(temperature_zone_2).state;
+      }
+      const uint32_t set_at = id(manual_temperature_zone_2_set_at);
+      if (set_at != 0 && millis() - set_at < 4 * 60 * 60 * 1000UL) {
+        return (id(manual_temperature_zone_2).state - 32.0) * (5.0/9.0);
+      }
+      return NAN;
+
+globals:
+  # millis() when the manual temperature was last set; 0 means never.
+  - id: manual_temperature_zone_1_set_at
+    type: uint32_t
+    initial_value: "0"
+  - id: manual_temperature_zone_2_set_at
+    type: uint32_t
+    initial_value: "0"
+
+# Fallback temperatures, used only while HA is disconnected.
+# Each one expires 4 hours after it was last set.
+number:
+  - platform: template
+    name: Zone 1 Manual Temperature
+    id: manual_temperature_zone_1
+    unit_of_measurement: "°F"
+    mode: box
+    min_value: 40
+    max_value: 100
+    step: 0.5
+    optimistic: true
+    restore_value: false
+    # set_action (not on_value) so the initial publish at boot doesn't count
+    set_action:
+      - lambda: id(manual_temperature_zone_1_set_at) = millis();
+  - platform: template
+    name: Zone 2 Manual Temperature
+    id: manual_temperature_zone_2
+    unit_of_measurement: "°F"
+    mode: box
+    min_value: 40
+    max_value: 100
+    step: 0.5
+    optimistic: true
+    restore_value: false
+    # set_action (not on_value) so the initial publish at boot doesn't count
+    set_action:
+      - lambda: id(manual_temperature_zone_2_set_at) = millis();
 
 output:
   - platform: gpio
