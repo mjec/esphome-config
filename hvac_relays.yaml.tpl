@@ -27,6 +27,7 @@ wifi:
   ssid: "op://Private/Cordubel-IoT-NI/network name"
   password: "op://Private/Cordubel-IoT-NI/wireless network password"
   fast_connect: true
+  min_auth_mode: WPA2
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
