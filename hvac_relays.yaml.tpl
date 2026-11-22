@@ -174,7 +174,7 @@ sensor:
       }
       const uint32_t set_at = id(manual_temperature_zone_1_set_at);
       if (set_at != 0 && millis() - set_at < 4 * 60 * 60 * 1000UL) {
-        return (id(manual_temperature_zone_1).state - 32.0) * (5.0/9.0);
+        return id(manual_temperature_zone_1).state;
       }
       return NAN;
   - platform: template
@@ -188,7 +188,7 @@ sensor:
       }
       const uint32_t set_at = id(manual_temperature_zone_2_set_at);
       if (set_at != 0 && millis() - set_at < 4 * 60 * 60 * 1000UL) {
-        return (id(manual_temperature_zone_2).state - 32.0) * (5.0/9.0);
+        return id(manual_temperature_zone_2).state;
       }
       return NAN;
 
@@ -202,15 +202,16 @@ globals:
     initial_value: "0"
 
 # Fallback temperatures, used only while HA is disconnected.
+# In °C, matching the climate entities in the web UI.
 # Each one expires 4 hours after it was last set.
 number:
   - platform: template
     name: Zone 1 Manual Temperature
     id: manual_temperature_zone_1
-    unit_of_measurement: "°F"
+    unit_of_measurement: "°C"
     mode: box
-    min_value: 40
-    max_value: 100
+    min_value: 5
+    max_value: 38
     step: 0.5
     optimistic: true
     restore_value: false
@@ -220,10 +221,10 @@ number:
   - platform: template
     name: Zone 2 Manual Temperature
     id: manual_temperature_zone_2
-    unit_of_measurement: "°F"
+    unit_of_measurement: "°C"
     mode: box
-    min_value: 40
-    max_value: 100
+    min_value: 5
+    max_value: 38
     step: 0.5
     optimistic: true
     restore_value: false
