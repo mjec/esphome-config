@@ -1,12 +1,14 @@
 esphome:
   name: hvac-relays
-  # This is actually an ESP8266EX with 4mb RAM running at 26 MHz
+  # This is actually an ESP8266EX with 4 MB flash running at 26 MHz
   platformio_options:
     board_build.f_cpu: 26000000L
-    board_upload.maximum_size: 4194304
 
 esp8266:
-  board: esp01_1m
+  # Not an ESP-12E, but this gives us the 4 MB flash layout, which leaves room
+  # for OTA updates. Flash chip ID 0x001640EF (0x16 => 2^22 bytes = 4 MB),
+  # read using the debug component.
+  board: esp12e
 
 # Enable logging
 logger:
